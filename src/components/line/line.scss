@@ -4,10 +4,9 @@
     font-size: 24px;
     font-weight: bold;
     color: $background;
-}
-
-.line {
     overflow: hidden;
+    display: inline-block;
+    width: 100%;
 }
 
 .line:after {

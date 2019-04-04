@@ -1,9 +1,11 @@
 include ./components/avatar/avatar
+include ./components/icons/icon
 include ./components/line/line
+include ./components/info/info
 
 doctype html
 
-hmtl(lang="en")
+hmtl(lang='en')
   head
     meta(charset='utf-8')
     title Resume template
@@ -12,10 +14,20 @@ hmtl(lang="en")
       .row
         #left
             +avatar({
-            url:"https://m-ch.ml/rand/r3/7.jpeg", 
-            name:"John",
-            surname:"Doe",
-            occupation:"GRAPHIC DESIGNER"
+              url:'https://m-ch.ml/b/thumb/1552607655609s.jpg', 
+              name:'John',
+              surname:'Doe',
+              occupation:'GRAPHIC DESIGNER'
             })
         #right
-          +line("Testing")
+          div.titleCont
+            +icon
+            +line("Testing")
+          ul
+            +info({
+              title:'MASTER DEGREE', 
+              subtitle:'UNIVERSITY NAME',
+              date:'//Feb 2011 - June 2012',
+              text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed blandit tortor. Nulla rhoncus mauris in nulla pulvinar sodales. Quisque vitae lacus in enim molestie tristique ac eu nibh. Sed aliquam libero vitae magna efficitur aliquet.'
+            })
+          

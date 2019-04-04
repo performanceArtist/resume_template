@@ -1,6 +1,7 @@
 @import "components/icons/icons.scss";
 @import "components/line/line.scss";
 @import "components/avatar/avatar.scss";
+@import "components/info/info.scss";
 
 body {
 	color: black;
@@ -37,4 +38,14 @@ body {
 	float: left;
 	width: 60%;
 	background-color: pink;
+}
+
+.titleCont {
+	display: flex;
+	padding: 0.5em;
+	align-items: center;
+}
+
+.titleCont .icont {
+	margin-right: 3%;
 }

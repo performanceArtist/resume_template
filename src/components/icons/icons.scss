@@ -3,6 +3,7 @@
 
 .icont {
     @include circle($iconSize, $background);
+    display: inline-block;
 }
 
 .profile {
