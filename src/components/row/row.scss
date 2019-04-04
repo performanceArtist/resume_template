@@ -1,0 +1,16 @@
+@import 'components/include/defaults';
+
+.trow {
+	margin-top: 0.5em;
+}
+
+.trow .iteml {
+	display: inline-block;
+	color: $background;
+	font-weight: bold;
+	width: 35%;
+}
+
+.trow .itemr {
+	width: 65%;
+}

@@ -2,6 +2,9 @@
 @import "components/line/line.scss";
 @import "components/avatar/avatar.scss";
 @import "components/info/info.scss";
+@import "components/bar/bar.scss";
+@import "components/circle_bar/bar.scss";
+@import "components/row/row.scss";
 
 body {
 	color: black;
@@ -43,9 +46,33 @@ body {
 .titleCont {
 	display: flex;
 	padding: 0.5em;
+	padding-left: 0;
 	align-items: center;
 }
 
-.titleCont .icont {
+.titleCont .line {
+	flex: 0 0 88%;
+}
+
+#software, #skills {
+	padding: 5%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#software .item, #skills .item {
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+#skills .item {
+	text-align: center;
+}
+
+#contact {
+	padding: 5%;
+}
+
+#education {
 	margin-right: 3%;
 }

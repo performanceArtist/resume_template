@@ -9,6 +9,7 @@
 
 #piccont {
     @include circle($avatarSize, $background);
+    border: 8px solid white;
 }
 
 #pic {

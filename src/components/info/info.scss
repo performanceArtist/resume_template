@@ -1,4 +1,30 @@
-li {
+@import '../include/defaults';
 
+li {
+    list-style-type: none;
+    position: relative;
 }
 
+li::before {
+    content: '\2022';
+    position: absolute;
+    left: -0.55em;
+    font-size: 3em;
+    top: -0.42em;
+}
+
+.title {
+    margin-bottom: 3%;
+}
+
+.title .iteml {
+    font-weight: bold;
+}
+
+.title .itemr {
+    margin-left: 0.5em;
+}
+
+.subtitle {
+    margin-bottom: 3%;
+}

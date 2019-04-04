@@ -4,8 +4,14 @@
 .icont {
     @include circle($iconSize, $background);
     display: inline-block;
+    border: 4px solid white;
 }
 
+.icont div {
+    background-color: $background;
+    width: 100%;
+    height: 100%;
+}
 .profile {
 
 }

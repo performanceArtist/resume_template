@@ -1,0 +1,12 @@
+@import '../include/defaults';
+
+.bar {
+    background-color: $barLeft;
+    width: 150px;
+    height: 20px;
+    div {
+        background-color: $barDone;
+        margin: 0;
+        height: 20px;
+    }
+}
