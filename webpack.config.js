@@ -20,15 +20,16 @@ const config = {
     rules: [
       { 
         test: /\.pug$/,
-        use: ["pug-loader"]
+        use: ['pug-loader']
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
-          "css-loader"
+          'css-loader',
+          'sass-loader'
         ]
       }
     ]
@@ -44,20 +45,3 @@ const config = {
 };
 
 module.exports = config;
-
-//whatever
-/*(env, argv) => {
-
-if (argv.mode === 'development') {}
-if (argv.mode === 'production') {}
-
-return config;
-}*/
-
-/*
-        use: ExtractTextPlugin.extract({ 
-          fallback:'style-loader',
-          use:['css-loader'],
-        })
-
-        */
