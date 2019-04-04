@@ -1,5 +1,39 @@
-@import "components/test/test.scss";
+@import "components/icon/icon.scss";
+@import "components/avatar/avatar.scss";
 
 body {
 	color: black;
+	background-color: white;
+	margin: 0;
+}
+
+#content {
+	width: 70%;
+	min-width: 320px;
+	max-width: 2400px;
+	border: 1px solid black;
+	margin: auto;
+	padding: 5%;
+}
+
+.row {
+  width: 100%;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#left {
+	float: left;
+	width: 40%;
+	background-color: aqua;
+}
+
+#right {
+	float: left;
+	width: 60%;
+	background-color: pink;
 }

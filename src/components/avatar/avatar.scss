@@ -1,0 +1,39 @@
+$blue:#3d6cb0;
+
+#avcont {
+    text-align: center;
+    padding: 5%;
+    line-height: 1;
+}
+
+#piccont {
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid white;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 0 2px #3d6cb0;
+    box-sizing: border-box;
+}
+
+#pic {
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+}
+
+#name {
+    margin-top: 0.5em;
+    font-size: 24px;
+}
+
+#surname {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#occupation {
+    font-weight: bold;
+    margin-top: 0.25em;
+}

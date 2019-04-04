@@ -1,10 +1,21 @@
-include ./components/test/test
+include ./components/avatar/avatar
 
 doctype html
 
-hmtl
+hmtl(lang="en")
   head
-    title Yep
+    meta(charset='utf-8')
+    title Resume template
   body
-    h1 Hello World!
-    +test({name:"Bob"})
+    #content
+      .row
+        #left
+            +avatar({
+            url:"https://m-ch.ml/rand/r3/7.jpeg", 
+            name:"John",
+            surname:"Doe",
+            occupation:"GRAPHIC DESIGNER"
+            })
+        #right
+          div kek
+      
