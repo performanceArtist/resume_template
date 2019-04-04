@@ -1,0 +1,10 @@
+@import '../include/defaults';
+@import '../include/circle';
+
+.icont {
+    @include circle($iconSize, $background);
+}
+
+.profile {
+
+}

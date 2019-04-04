@@ -1,0 +1,22 @@
+@import '../include/defaults';
+
+.line {
+    font-size: 24px;
+    font-weight: bold;
+    color: $background;
+}
+
+.line {
+    overflow: hidden;
+}
+
+.line:after {
+    content:"";
+    display: inline-block;
+    height: 0.45em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 0.2em solid $background;
+}
