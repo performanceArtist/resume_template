@@ -1,7 +1,8 @@
 @import '../include/defaults';
 
 .line {
-    font-size: 24px;
+    font-family: 'Conv_Arial-BoldMT';
+    font-size: 19.75pt;
     font-weight: bold;
     color: $background;
     overflow: hidden;
@@ -12,10 +13,10 @@
 .line:after {
     content:"";
     display: inline-block;
-    height: 0.45em;
+    height: 0.55em;
     vertical-align: bottom;
     width: 100%;
     margin-right: -100%;
     margin-left: 10px;
-    border-top: 0.2em solid $background;
+    border-top: 3px solid #3d6cb0;
 }

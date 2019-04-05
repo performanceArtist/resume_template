@@ -2,11 +2,11 @@
 
 .bar {
     background-color: $barLeft;
-    width: 150px;
-    height: 20px;
+    height: 15px;
+    font-size: 12.35pt;
     div {
         background-color: $barDone;
         margin: 0;
-        height: 20px;
+        height: 15px;
     }
 }
