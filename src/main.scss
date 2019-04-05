@@ -10,15 +10,14 @@ body {
 	color: black;
 	background-color: white;
 	margin: 0;
+	font-family: "Conv_ARIALMT";
 }
 
 #content {
 	width: 70%;
+	height: 100vh;
 	min-width: 320px;
-	max-width: 2400px;
-	border: 1px solid black;
-	margin: auto;
-	padding: 5%;
+	max-width: 1920px;
 }
 
 .row {
@@ -34,13 +33,11 @@ body {
 #left {
 	float: left;
 	width: 40%;
-	background-color: aqua;
 }
 
 #right {
 	float: left;
 	width: 60%;
-	background-color: pink;
 }
 
 .titleCont {
@@ -50,18 +47,21 @@ body {
 	align-items: center;
 }
 
-.titleCont .line {
-	flex: 0 0 88%;
+.titleCont .line,  .titleCont .icont{
+	margin-right: 2%;
 }
 
-#software, #skills {
-	padding: 5%;
+#avatar, #profile, #contact, #skills {
+
+}
+
+#scont {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-#software .item, #skills .item {
-	margin-left: 5%;
+#scont .item, #skills .item {
+	margin-right: 5%;
 	margin-top: 2%;
 }
 
@@ -70,9 +70,14 @@ body {
 }
 
 #contact {
-	padding: 5%;
+
 }
 
 #education {
 	margin-right: 3%;
+	margin-left: -1%;
+}
+
+#experiece {
+	margin-left: -1%;
 }

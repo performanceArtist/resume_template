@@ -23,7 +23,7 @@ const config = {
         use: ['pug-loader']
       },
       {
-        test: /\.scss$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,

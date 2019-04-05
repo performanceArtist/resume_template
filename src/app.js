@@ -1,2 +1,2 @@
-import "./fonts/comic/style.scss";
+import "./fonts/arialmt/fonts.css";
 import './main.scss';

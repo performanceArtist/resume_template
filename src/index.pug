@@ -16,40 +16,68 @@ hmtl(lang='en')
     #content
       .row
         #left
-          +avatar({
-            url:'https://m-ch.ml/rand/r7/64.jpeg', 
-            name:'John',
-            surname:'Doe',
-            occupation:'GRAPHIC DESIGNER'
-          })
+          #avatar
+            +avatar({
+              url:'https://m-ch.ml/rand/r7/64.jpeg', 
+              name:'John',
+              surname:'Doe',
+              occupation:'GRAPHIC DESIGNER'
+            })    
+
+          #profile    
+            .titleCont
+              +icon
+              +line("PROFILE") 
+            div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed blandit tortor. Nulla rhoncus mauris in nulla pulvinar sodales. Quisque vitae lacus in enim molestie tristique ac eu nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed blandit tortor. Nulla rhoncus mauris in nulla pulvinar sodales. Quisque vitae lacus in enim molestie tristique ac eu nibh. Sed aliquam libero vitae magna efficitur aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed blandit tortor. Nulla rhoncus mauris in nulla pulvinar sodales. Quisque vitae lacus in enim molestie tristique ac eu nibh. Sed aliquam libero vitae magna efficitur aliquet.
+          
+          #contact
+            .titleCont
+              +icon
+              +line("CONTACT") 
+            +row('ADDRESS', 'Bat Country')
+            +row('E-MAIL', 'mail@gmail.com')
+            +row('PHONE', '8-913-999-00-01')   
+            +row('WEBSITE', 'kek.com') 
 
           #skills
+            .titleCont
+              +icon
+              +line("SKILLS")  
             +cbar(12, 3, 'And now')
             +cbar(12, 4, 'For something')
             +cbar(12, 9, 'Completely')
-            +cbar(12, 15, 'Different')
+            +cbar(12, 15, 'Different')   
 
-          #contact
-            +row('ADDRESS', 'Bat Country')
-            +row('E-MAIL', 'mail@gmail.com')
-            +row('PHONE', '8-913-999-00-01')
+        #right   
+          #education
+            .titleCont
+              +icon
+              +line("EDUCATION") 
+            ul
+              - var o = {title:'MASTER DEGREE', subtitle:'UNIVERSITY NAME',date:'//Feb 2011 - June 2012',text:'Phasellus sed blandit tortor. Nulla rhoncus mauris in nulla pulvinar sodales. Quisque vitae lacus in enim molestie tristique ac eu nibh. Sed aliquam libero vitae magna efficitur aliquet.'}
+              +info(o)    
+              +info(o)
+              +info(o)
+              +info(o)
 
-        #right
+          #experience
           .titleCont
             +icon
-            +line("Testing")
-
-          #education
+            +line("EXPERIENCE") 
+          - var o = {title:'MASTER DEGREE', subtitle:'UNIVERSITY NAME',date:'//Feb 2011 - June 2012',text:'Phasellus sed blandit tortor. Nulla rhoncus mauris in nulla pulvinar sodales. Quisque vitae lacus in enim molestie tristique ac eu nibh. Sed aliquam libero vitae magna efficitur aliquet.'}
             ul
-              +info({
-                title:'MASTER DEGREE', 
-                subtitle:'UNIVERSITY NAME',
-                date:'//Feb 2011 - June 2012',
-                text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed blandit tortor. Nulla rhoncus mauris in nulla pulvinar sodales. Quisque vitae lacus in enim molestie tristique ac eu nibh. Sed aliquam libero vitae magna efficitur aliquet.'
-              })
+              +info(o)    
+              +info(o)
+              +info(o)
 
           #software
-            +bar('60%', 'And now')
-            +bar('10%', 'For something')
-            +bar('90%', 'Completely')
-            +bar('50%', 'Different')
+            .titleCont
+              +icon
+              +line("SOFTWARE") 
+            #scont
+              +bar('60%', 'And now')
+              +bar('10%', 'For something')
+              +bar('90%', 'Completely')
+              +bar('50%', 'Different')    
+              +bar('90%', 'Completely')
+              +bar('50%', 'Different')  
