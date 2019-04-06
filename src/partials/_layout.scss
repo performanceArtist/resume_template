@@ -1,0 +1,127 @@
+body {
+	color: black;
+	background-color: white;
+	margin: 0;
+	font-family: "Conv_ARIALMT";
+}
+
+#content {
+	width: 65%;
+	height: 100vh;
+	min-width: 320px;
+	max-width: 1920px;
+	margin-left: 4.8%;
+}
+
+.row {
+  width: 100%;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+#left {
+	float: left;
+	width: 38.5%;
+	margin-right: 3.5%;
+	padding-top: 7.5%;
+}
+
+#right {
+	float: left;
+	width: 58%;
+	padding-top: 5.2%;
+}
+
+//left column
+//avatar
+#avatar {
+	margin-bottom: 16%;
+}
+
+//profile
+#profile {
+	margin-bottom: 9.5%;
+}
+
+#profile .text {
+	font-size: 7.41pt;
+	margin-right: 19%;
+	line-height: 1.2;
+}
+
+//contact
+#contact {
+	font-size: 9.88pt;
+}
+
+#contact .trow {
+	margin-bottom: 7.8%;
+}
+
+#contact .tcont {
+	padding-bottom: 7.7%;
+}
+
+//skills
+#skills .item {
+	text-align: center;
+}
+
+#skills .tcont {
+	margin-bottom: 1%;
+}
+
+#skills .item {
+	margin-bottom: 3.6%;
+}
+
+#skills .item div {
+	margin-top: 1%;
+}
+
+
+//right column
+//education
+#education {
+	margin-bottom: 6%;
+}
+
+#education li, #experience li {
+	margin-right: 5%;
+	margin-bottom: 4%;
+}
+
+//experience
+#experience {
+	margin-bottom: 7.5%;
+}
+
+#experience .tcont {
+	margin-bottom: 5%;
+}
+
+//software
+#software .tcont {
+	margin-bottom: 2%;
+}
+
+#softcont {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 2%;
+}
+
+#softcont .item  {
+	width: 40%;
+	margin-right: 10%;
+	margin-bottom: 3%;
+}
+
+#softcont .item .bar {
+	margin-top: 7%;
+}

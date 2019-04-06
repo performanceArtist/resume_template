@@ -1,8 +1,8 @@
-@mixin circle($size, $outerColor) {
+@mixin circle($size, $outer-color) {
     margin: auto;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 0 1px $outerColor;
+    box-shadow: 0 0 0 1px $outer-color;
     box-sizing: border-box;
     width: $size;
     height: $size;

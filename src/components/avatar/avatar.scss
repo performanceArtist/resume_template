@@ -1,20 +1,17 @@
-@import '../include/defaults';
-@import '../include/circle';
-
 #avcont {
     text-align: center;
     line-height: 1;
 }
 
 #piccont {
-    @include circle($avatarSize, $background);
+    @include circle($avatar-size, $avatar-background-color);
     border: 8px solid white;
 }
 
 #pic {
     width: 100%;
     height: 100%;
-    background-color: $background;
+    background-color: $avatar-background-color;
 }
 
 #name {

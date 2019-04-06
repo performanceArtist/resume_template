@@ -1,17 +1,17 @@
 include ./components/avatar/avatar
-include ./components/icons/icon
-include ./components/line/line
 include ./components/info/info
 include ./components/bar/bar
 include ./components/circle_bar/bar
 include ./components/row/row
+
+include ./composite/title/title
 
 doctype html
 
 hmtl(lang='en')
   head
     meta(charset='utf-8')
-    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.1/css/all.css", integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf", crossorigin="anonymous")
+    link(rel="stylesheet", href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
     title Resume template
   body
     #content
@@ -26,25 +26,22 @@ hmtl(lang='en')
             })    
 
           #profile    
-            .titleCont
-              +icon('fas fa-user')
-              +line("PROFILE") 
+            +title('fas fa-user', 'PROFILE')
+            
             .text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu 
               b pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
           
           #contact
-            .titleCont
-              +icon('fas fa-phone')
-              +line("CONTACT") 
+            +title('fas fa-phone', 'CONTACT')
+
             +row('ADDRESS', 'Main Street, City.')
             +row('E-MAIL', 'contact@domain.com')
             +row('PHONE', '555-555-555')   
             +row('WEBSITE', 'www.yourweb.com') 
 
           #skills
-            .titleCont
-              +icon('fas fa-lightbulb')
-              +line("SKILLS")  
+            +title('fas fa-lightbulb', 'SKILLS')
+
             +cbar(12, 3, 'CREATIVE')
             +cbar(12, 4, 'TEAMWORK')
             +cbar(12, 9, 'INNOVATIVE')
@@ -52,20 +49,17 @@ hmtl(lang='en')
 
         #right   
           #education
-            .titleCont
-              +icon('fas fa-star')
-              +line("EDUCATION") 
+            +title('fas fa-star', 'EDUCATION')
+
             ul
-              - var o = {title:'MASTER DEGREE', titleColor:'#3d6cb0' , subtitle:'UNIVERSITY NAME',date:'//Feb 2011 - June 2012',text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}
+              - var o = {title:'MASTER DEGREE', titleColor:'#3d6cb0', subtitle:'UNIVERSITY NAME',date:'//Feb 2011 - June 2012',text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}
               +info(o)    
               +info(o)
               +info(o)
               +info(o)
 
           #experience
-            .titleCont
-              +icon('fas fa-suitcase')
-              +line("EXPERIENCE") 
+            +title('fas fa-suitcase', 'EXPERIENCE')
             
             ul
               - var o = {title:'COMPANY NAME', subtitle:'YOUR JOB HERE',date:'//Feb 2011 - June 2012',text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}
@@ -74,10 +68,9 @@ hmtl(lang='en')
               +info(o)
 
           #software
-            .titleCont
-              +icon('fas fa-laptop')
-              +line("SOFTWARE") 
-            #scont
+            +title('fas fa-laptop', 'SOFTWARE')
+
+            #softcont
               +bar('60%', 'PHOTOSHOP')
               +bar('10%', 'DREAMWEAVER')
               +bar('90%', 'ILLUSTRATOR')

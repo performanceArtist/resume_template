@@ -1,12 +1,10 @@
-@import '../include/defaults';
-
 .bar {
-    background-color: $barLeft;
-    height: 15px;
+    background-color: $progress-left-color;
+    height: $progress-bar-height;
     font-size: 12.35pt;
     div {
-        background-color: $barDone;
+        background-color: $progress-done-color;
         margin: 0;
-        height: 15px;
+        height: $progress-bar-height;
     }
 }

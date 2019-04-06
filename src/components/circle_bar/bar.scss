@@ -1,8 +1,6 @@
-@import '../include/defaults';
-
 %dot {
-    height: 13px;
-    width: 13px;
+    height: $progress-dot-height;
+    width: $progress-dot-height;
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
@@ -10,10 +8,10 @@
 
 .checked {
     @extend %dot;
-    background-color: $checked;
+    background-color: $progress-done-color;
 }
 
 .unchecked {
     @extend %dot;
-    background-color: $unchecked;
+    background-color: $progress-left-color;
 }

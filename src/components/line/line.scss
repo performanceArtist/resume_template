@@ -1,10 +1,8 @@
-@import '../include/defaults';
-
 .line {
     font-family: 'Conv_Arial-BoldMT';
     font-size: 19.75pt;
     font-weight: bold;
-    color: $background;
+    color: $blue;
     overflow: hidden;
     display: inline-block;
     width: 100%;
@@ -18,5 +16,5 @@
     width: 100%;
     margin-right: -100%;
     margin-left: 10px;
-    border-top: 3px solid #3d6cb0;
+    border-top: 3px solid $blue;
 }
