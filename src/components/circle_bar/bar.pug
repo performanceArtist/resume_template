@@ -1,9 +1,0 @@
-mixin cbar(count, checked, text)
-  .item #{text}
-    - var n = 0;
-    div
-      while n++ < count
-        if n <= checked
-          .checked
-        else
-          .unchecked

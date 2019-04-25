@@ -1,8 +1,8 @@
 include ./components/avatar/avatar
 include ./components/info/info
 include ./components/bar/bar
-include ./components/circle_bar/bar
-include ./components/row/row
+include ./components/circle-bar/bar
+include ./components/contact-info/contact-info
 
 include ./composite/title/title
 
@@ -34,25 +34,31 @@ hmtl(lang='en')
           #contact
             +title('fas fa-phone', 'CONTACT')
 
-            +row('ADDRESS', 'Main Street, City.')
-            +row('E-MAIL', 'contact@domain.com')
-            +row('PHONE', '555-555-555')   
-            +row('WEBSITE', 'www.yourweb.com') 
+            +contact-info('ADDRESS', 'Main Street, City.')
+            +contact-info('E-MAIL', 'contact@domain.com')
+            +contact-info('PHONE', '555-555-555')   
+            +contact-info('WEBSITE', 'www.yourweb.com') 
 
           #skills
             +title('fas fa-lightbulb', 'SKILLS')
 
-            +cbar(12, 3, 'CREATIVE')
-            +cbar(12, 4, 'TEAMWORK')
-            +cbar(12, 9, 'INNOVATIVE')
-            +cbar(12, 15, 'COMMUNICATION')   
+            +circle-bar(12, 3, 'CREATIVE')
+            +circle-bar(12, 4, 'TEAMWORK')
+            +circle-bar(12, 9, 'INNOVATIVE')
+            +circle-bar(12, 15, 'COMMUNICATION')   
 
         #right   
           #education
             +title('fas fa-star', 'EDUCATION')
 
             ul
-              - var o = {title:'MASTER DEGREE', titleColor:'#3d6cb0', subtitle:'UNIVERSITY NAME',date:'//Feb 2011 - June 2012',text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}
+              -var o = {
+              -  title:'MASTER DEGREE', 
+              -  titleColor:'#3d6cb0', 
+              -  subtitle:'UNIVERSITY NAME',
+              -  date:'//Feb 2011 - June 2012',
+              -  text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+              -}
               +info(o)    
               +info(o)
               +info(o)
@@ -62,7 +68,12 @@ hmtl(lang='en')
             +title('fas fa-suitcase', 'EXPERIENCE')
             
             ul
-              - var o = {title:'COMPANY NAME', subtitle:'YOUR JOB HERE',date:'//Feb 2011 - June 2012',text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}
+              -var o = {
+              -  title:'COMPANY NAME', 
+              -  subtitle:'YOUR JOB HERE', 
+              -  date:'//Feb 2011 - June 2012', 
+              -  text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+              -}
               +info(o)    
               +info(o)
               +info(o)

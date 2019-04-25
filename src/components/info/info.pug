@@ -1,8 +1,8 @@
 mixin info(data)
-    li
-      .title
-        span.iteml(style='color:' + data.titleColor) #{data.title}
-        span.itemr #{data.date}
-      .subtitle #{data.subtitle}
-      .text #{data.text}
+    li.info
+      .info__title
+        span.info__name(style='color:' + data.titleColor) #{data.title}
+        span.info__date #{data.date}
+      .info__subtitle #{data.subtitle}
+      .info__text #{data.text}
     

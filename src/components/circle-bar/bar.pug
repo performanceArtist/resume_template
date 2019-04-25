@@ -1,0 +1,10 @@
+mixin circle-bar(count, checked, text)
+  .circle-bar 
+    .circle-bar__text #{text}
+    .circle-bar__dots
+      - var n = 0;
+      while n++ < count
+        if n <= checked
+          .circle-bar__checked
+        else
+          .circle-bar__unchecked

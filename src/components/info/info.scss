@@ -1,35 +1,37 @@
-li {
+.info {
     list-style-type: none;
     position: relative;
+
+    &::before {
+        content: '\2022';
+        position: absolute;
+        left: -0.55em;
+        font-size: 3.2em;
+        top: -0.42em;
+    }
+
+    &__title {
+        margin-bottom: 1%;
+    }
+
+    &__name {
+        font-family: 'Conv_Arial-BoldMT';
+        font-weight: bold;
+        font-size: 12.35pt;
+    }
+    
+    &__date {
+        margin-left: 0.5em;
+    }
+    
+    &__subtitle {
+        margin-bottom: 1%;
+        font-size: 12.35pt;
+    }
+    
+    &__text {
+        font-size: 7.41pt;
+    }
 }
 
-li::before {
-    content: '\2022';
-    position: absolute;
-    left: -0.55em;
-    font-size: 3.2em;
-    top: -0.42em;
-}
 
-.title {
-    margin-bottom: 1%;
-}
-
-.title .iteml {
-    font-family: 'Conv_Arial-BoldMT';
-    font-weight: bold;
-    font-size: 12.35pt;
-}
-
-.title .itemr {
-    margin-left: 0.5em;
-}
-
-.subtitle {
-    margin-bottom: 1%;
-    font-size: 12.35pt;
-}
-
-.text {
-    font-size: 7.41pt;
-}

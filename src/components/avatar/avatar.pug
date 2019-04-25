@@ -1,7 +1,7 @@
 mixin avatar(options)
-  #avcont
-    #piccont
-      img#pic(src=options.url)
-    #name #{options.name}
-    #surname #{options.surname}
-    #occupation #{options.occupation}
+  .avatar
+    .avatar__img
+      img(src=options.url)
+    .avatar__name #{options.name}
+    .avatar__surname #{options.surname}
+    .avatar__occupation #{options.occupation}

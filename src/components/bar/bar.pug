@@ -1,4 +1,5 @@
 mixin bar(done, text)
-  .item #{text}
-    .bar
-      div(style='width:' + done)
+  .bar
+    .bar__text #{text}
+    .bar__bar
+      .bar__progress(style='width:' + done)

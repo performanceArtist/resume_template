@@ -23,7 +23,6 @@ body {
 	display: table;
 }
 
-
 #left {
 	float: left;
 	width: 38.5%;
@@ -38,55 +37,44 @@ body {
 }
 
 //left column
-//avatar
 #avatar {
 	margin-bottom: 16%;
 }
 
-//profile
 #profile {
 	margin-bottom: 9.5%;
+	.text {
+		font-size: 7.41pt;
+		margin-right: 19%;
+		line-height: 1.2;
+	}
 }
 
-#profile .text {
-	font-size: 7.41pt;
-	margin-right: 19%;
-	line-height: 1.2;
-}
-
-//contact
 #contact {
 	font-size: 9.88pt;
-}
 
-#contact .trow {
-	margin-bottom: 7.8%;
-}
+	.contact-info {
+		margin-bottom: 7.8%;
+	}
 
-#contact .tcont {
-	padding-bottom: 7.7%;
+	.title {
+		padding-bottom: 7.7%;
+	}
 }
 
 //skills
-#skills .item {
-	text-align: center;
-}
+#skills {
+	.circle-bar {
+		margin-bottom: 3.6%;
+	}
 
-#skills .tcont {
-	margin-bottom: 1%;
+	.title {
+		margin-bottom: 1%;
+	}
 }
-
-#skills .item {
-	margin-bottom: 3.6%;
-}
-
-#skills .item div {
-	margin-top: 1%;
-}
-
 
 //right column
-//education
+
 #education {
 	margin-bottom: 6%;
 }
@@ -96,17 +84,15 @@ body {
 	margin-bottom: 4%;
 }
 
-//experience
 #experience {
 	margin-bottom: 7.5%;
+
+	.title {
+		margin-bottom: 5%;
+	}
 }
 
-#experience .tcont {
-	margin-bottom: 5%;
-}
-
-//software
-#software .tcont {
+#software .title {
 	margin-bottom: 2%;
 }
 
@@ -114,14 +100,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	padding-left: 2%;
-}
 
-#softcont .item  {
-	width: 40%;
-	margin-right: 10%;
-	margin-bottom: 3%;
-}
-
-#softcont .item .bar {
-	margin-top: 7%;
+	.bar  {
+		width: 40%;
+		margin-right: 10%;
+		margin-bottom: 3%;
+	}	
 }

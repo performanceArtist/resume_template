@@ -1,0 +1,12 @@
+.contact-info {
+	.contact-info__title {
+		display: inline-block;
+		color: $blue;
+		font-weight: bold;
+		width: 30%;
+	}
+	
+	.contact-info__text {
+		width: 70%;
+	}
+}

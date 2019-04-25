@@ -1,10 +1,8 @@
-.icont {
+.icon {
     @include circle($icon-size, $icon-background-color);
     display: inline-table;
     border: 2px solid white;
-}
 
-.icont div {
     background-color: $icon-background-color;
     width: $icon-size;
     height: $icon-size;
