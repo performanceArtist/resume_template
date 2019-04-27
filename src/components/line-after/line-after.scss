@@ -10,12 +10,12 @@
     &:after {
         content:"";
         display: inline-block;
-        height: 0.55em;
-        vertical-align: bottom;
+        vertical-align: middle;
         width: 100%;
         margin-right: -100%;
         margin-left: 10px;
         border-top: 3px solid $blue;
+        margin-bottom: 3px;
     }
 }
 
