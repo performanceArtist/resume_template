@@ -4,6 +4,6 @@
     overflow: hidden;
     box-shadow: 0 0 0 1px $outer-color;
     box-sizing: border-box;
-    width: $size;
+    min-width: $size;
     height: $size;
 }
