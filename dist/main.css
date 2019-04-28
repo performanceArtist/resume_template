@@ -27,7 +27,7 @@ body {
   height: 100vh;
   min-width: 320px;
   max-width: 1920px;
-  margin-left: 4.8%; }
+  margin: auto; }
 
 .row {
   width: 100%; }
@@ -125,12 +125,12 @@ body {
   .line-after:after {
     content: "";
     display: inline-block;
-    height: 0.55em;
-    vertical-align: bottom;
+    vertical-align: middle;
     width: 100%;
     margin-right: -100%;
     margin-left: 10px;
-    border-top: 3px solid #3d6cb0; }
+    border-top: 3px solid #3d6cb0;
+    margin-bottom: 3px; }
 
 .avatar {
   text-align: center;
