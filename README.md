@@ -2,7 +2,30 @@
 
 First FSD task
 
-## Links, just in case:
+## Usage
 
-* [pug](https://itnext.io/webpack-4-write-pug-templates-c24e5ea07317)
-* [css](https://medium.com/a-beginners-guide-for-webpack-2/webpack-loaders-css-and-sass-2cc0079b5b3a)
+Clone this repository and run the following commands.
+
+To install dependencies:
+
+```
+npm install
+```
+
+To start the development server on port 5000(can be set in webpack.config)
+
+```shell
+npm start
+```
+
+Development build
+
+```shell
+npm run dev
+```
+
+Production build
+
+```
+npm run build
+```

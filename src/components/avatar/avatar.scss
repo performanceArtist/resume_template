@@ -6,7 +6,7 @@
 .avatar__img {
     @include circle($avatar-size, $avatar-background-color);
     border: 8px solid white;
-
+    
     img {
         width: 100%;
         height: 100%;
