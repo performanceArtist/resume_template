@@ -6,6 +6,12 @@ First FSD task
 
 Clone this repository and run the following commands.
 
+Clone:
+
+```
+git clone https://github.com/performanceArtist/resume_template.git
+```
+
 To install dependencies:
 
 ```
