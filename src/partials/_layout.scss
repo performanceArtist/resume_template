@@ -1,120 +1,48 @@
 body {
-	color: black;
-	background-color: white;
-	margin: 0;
-	font-family: "Conv_ARIALMT";
+  color: black;
+  background-color: white;
+  margin: 0;
+  font-family: "Conv_ARIALMT";
 }
 
 .content {
-	width: 65%;
-	min-width: 320px;
-	max-width: 1920px;
-	margin: auto;
+  width: 65%;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .row {
-	width: 100%;
+  width: 100%;
 }
 
 .row::after {
-	content: "";
-	clear: both;
-	display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .left {
-	float: left;
-	width: 38.5%;
-	margin-right: 3.5%;
-	padding-top: 7.5%;
+  float: left;
+  width: 38.5%;
+  margin-right: 3.5%;
+  padding-top: 7.5%;
 }
 
 .right {
-	float: left;
-	width: 58%;
-	padding-top: 5.2%;
-}
-
-//left column
-.avatar {
-	margin-bottom: 16%;
-}
-
-.profile {
-	margin-bottom: 9.5%;
-	.text {
-		font-size: 0.6175rem;
-		margin-right: 19%;
-		line-height: 1.2;
-	}
-}
-
-.contact {
-	font-size: 0.823rem;
-
-	.contact-info {
-		margin-bottom: 7.8%;
-	}
-
-	.title {
-		padding-bottom: 7.7%;
-	}
-}
-
-//skills
-.skills {
-	.circle-bar {
-		margin-bottom: 3.6%;
-	}
-
-	.title {
-		margin-bottom: 1%;
-	}
-}
-
-//right column
-
-.education {
-	margin-bottom: 6%;
-}
-
-.education li, .experience li {
-	margin-right: 5%;
-	margin-bottom: 4%;
-}
-
-.experience {
-	margin-bottom: 7.5%;
-
-	.title {
-		margin-bottom: 5%;
-	}
-}
-
-.software .title {
-	margin-bottom: 2%;
-}
-
-.softcont {
-	display: flex;
-	flex-wrap: wrap;
-	padding-left: 2%;
-
-	.bar  {
-		width: 40%;
-		margin-right: 10%;
-		margin-bottom: 3%;
-	}	
+  float: left;
+  width: 58%;
+  padding-top: 5.2%;
 }
 
 @media screen and (max-width: 900px) {
-	.content {
-		width: 92%;
-	}
+  .content {
+    width: 92%;
+  }
 
-	.right, .left {
-		float: none;
-		width: 100%;
-		margin: 0;
-	}
+  .right, .left {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
 }

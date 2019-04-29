@@ -1,0 +1,17 @@
+.software {
+  .title {
+    margin-bottom: 2%;
+  }
+
+  &__barcont {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+  }
+
+  .bar  {
+    width: 40%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+  }
+}

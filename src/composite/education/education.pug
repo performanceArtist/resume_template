@@ -1,0 +1,9 @@
+include ../../components/title/title
+include ../../components/info/info
+
+mixin education(...args)
+  .education
+    +title('fas fa-star', 'EDUCATION')
+    ul
+      each val in args
+        +info(val)

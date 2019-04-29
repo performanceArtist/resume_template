@@ -1,0 +1,39 @@
+.title {
+  display: flex;
+  padding: 0.5em;
+  padding-left: 1%;
+  align-items: center;
+
+  &__icon {
+    @include circle($icon-size, $icon-background-color);
+    display: inline-table;
+    border: 2px solid white;
+    background-color: $icon-background-color;
+    width: $icon-size;
+    height: $icon-size;
+    text-align: center;
+    i {
+      color: white;
+      line-height: 2.8125rem;
+      font-size: 1.625rem;
+    }
+    margin-right: 3%;
+  }
+
+  &__text {
+    font-family: 'Conv_Arial-BoldMT';
+    font-size: 1.64583rem;
+    font-weight: bold;
+    color: $blue;
+    display: inline-block;
+    margin-right: 0.8%;
+  }
+  
+  &__line {
+    height: 0.1875rem;
+    background: $blue;
+    overflow: hidden;
+    width: 100%;
+    margin-right: 4.5%;
+  }
+}

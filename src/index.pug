@@ -1,10 +1,12 @@
-include ./components/avatar/avatar
-include ./components/info/info
-include ./components/bar/bar
-include ./components/circle-bar/bar
-include ./components/contact-info/contact-info
+include ./composite/avatar/avatar
+include ./composite/profile/profile
+include ./composite/contact/contact
+include ./composite/skills/skills
 
-include ./composite/title/title
+include ./composite/education/education
+include ./composite/experience/experience
+include ./composite/software/software
+
 
 doctype html
 
@@ -18,74 +20,49 @@ html(lang='en')
     .content
       .row
         .left
-          .avatar
-            +avatar({
-              url:'https://m-ch.ml/rand/r7/64.jpeg', 
-              name:'NAME HERE',
-              surname:'SURNAME',
-              occupation:'GRAPHIC DESIGNER'
-            })    
+          +avatar({
+            url:'https://m-ch.ml/rand/r7/64.jpeg', 
+            name:'NAME HERE',
+            surname:'SURNAME',
+            occupation:'GRAPHIC DESIGNER'
+          })
 
-          .profile    
-            +title('fas fa-user', 'PROFILE')
-            
-            .text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu 
-              b pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
+          +profile
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu 
+            b pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
           
-          .contact
-            +title('fas fa-phone', 'CONTACT')
+          +contact({
+            address:'Main Street, City.', 
+            email:'contact@domain.com', 
+            phone:'555-555-555', 
+            website:'www.yourweb.com'
+          })
 
-            +contact-info('ADDRESS', 'Main Street, City.')
-            +contact-info('E-MAIL', 'contact@domain.com')
-            +contact-info('PHONE', '555-555-555')   
-            +contact-info('WEBSITE', 'www.yourweb.com') 
+          +skills({name:'CREATIVE', num:3},
+                  {name:'TEAMWORK', num:4},
+                  {name:'INNOVATIVE', num:9},
+                  {name:'COMMUNICATION', num:12})
+        .right
+          -var edu = {
+          -  title:'MASTER DEGREE', 
+          -  subtitle:'UNIVERSITY NAME',
+          -  date:'//Feb 2011 - June 2012',
+          -  text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+          -}
+          +education(edu, edu, edu, edu)
 
-          .skills
-            +title('fas fa-lightbulb', 'SKILLS')
+          -var exp = {
+          -  title:'COMPANY NAME', 
+          -  subtitle:'YOUR JOB HERE', 
+          -  date:'//Feb 2011 - June 2012', 
+          -  text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
+          -}
 
-            +circle-bar(12, 3, 'CREATIVE')
-            +circle-bar(12, 4, 'TEAMWORK')
-            +circle-bar(12, 9, 'INNOVATIVE')
-            +circle-bar(12, 15, 'COMMUNICATION')   
+          +experience(exp, exp, exp)
 
-        .right   
-          .education
-            +title('fas fa-star', 'EDUCATION')
-
-            ul
-              -var o = {
-              -  title:'MASTER DEGREE', 
-              -  titleColor:'.3d6cb0', 
-              -  subtitle:'UNIVERSITY NAME',
-              -  date:'//Feb 2011 - June 2012',
-              -  text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
-              -}
-              +info(o)    
-              +info(o)
-              +info(o)
-              +info(o)
-
-          .experience
-            +title('fas fa-suitcase', 'EXPERIENCE')
-            
-            ul
-              -var o = {
-              -  title:'COMPANY NAME', 
-              -  subtitle:'YOUR JOB HERE', 
-              -  date:'//Feb 2011 - June 2012', 
-              -  text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
-              -}
-              +info(o)    
-              +info(o)
-              +info(o)
-
-          .software
-            +title('fas fa-laptop', 'SOFTWARE')
-
-            .softcont
-              +bar('60%', 'PHOTOSHOP')
-              +bar('10%', 'DREAMWEAVER')
-              +bar('90%', 'ILLUSTRATOR')
-              +bar('50%', 'AFTER EFFECTS')    
-              +bar('90%', 'INDESIGN')
-              +bar('50%', 'HTML&CSS3')  
+          +software({name: 'PHOTOSHOP', perc:'60%'},
+                    {name: 'DREAMWEAVER', perc:'60%'},
+                    {name: 'ILLUSTRATOR', perc:'60%'},
+                    {name: 'AFTER EFFECTS', perc:'60%'},
+                    {name: 'INDESIGN', perc:'60%'},
+                    {name: 'HTML&CSS3', perc:'60%'})

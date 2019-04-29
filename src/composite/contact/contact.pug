@@ -1,0 +1,9 @@
+include ../../components/title/title
+
+mixin contact(opt={})
+  .contact
+    +title('fas fa-phone', 'CONTACT')
+    each pr in ['address', 'email', 'phone', 'website']
+      .contact__info
+        .contact__title #{pr}
+        span.contact__text #{opt[pr]}

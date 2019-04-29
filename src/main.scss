@@ -2,11 +2,18 @@
 @import 'partials/defaults';
 @import 'partials/layout';
 
-@import 'components/icon/icon';
-@import 'components/line-after/line-after';
-@import 'components/avatar/avatar';
 @import 'components/info/info';
 @import 'components/bar/bar';
-@import 'components/circle-bar/bar';
-@import 'components/contact-info/contact-info';
-@import 'composite/title/title';
+@import 'components/circle-bar/circle-bar';
+@import 'components/title/title';
+
+@import 'composite/avatar/avatar';
+@import 'composite/profile/profile';
+@import 'composite/contact/contact';
+@import 'composite/skills/skills';
+
+@import 'composite/education/education';
+@import 'composite/experience/experience';
+@import 'composite/software/software';
+
+

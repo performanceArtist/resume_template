@@ -1,0 +1,9 @@
+include ../../components/title/title
+include ../../components/bar/bar
+
+mixin software(...args)
+  .software
+    +title('fas fa-laptop', 'SOFTWARE')
+    .software__barcont
+      each val in args
+        +bar(val.name, val.perc)

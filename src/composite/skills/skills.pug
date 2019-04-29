@@ -1,0 +1,8 @@
+include ../../components/title/title
+include ../../components/circle-bar/circle-bar
+
+mixin skills(...args)
+  .skills
+    +title('fas fa-lightbulb', 'SKILLS')
+    each val in args
+      +circle-bar(val.name, val.num)
