@@ -4,6 +4,8 @@
     overflow: hidden;
     box-shadow: 0 0 0 1px $outer-color;
     box-sizing: border-box;
-    min-width: $size;
     height: $size;
+    //sort of a hack, but works in Firefox/Chrome
+    min-width: $size;
+    max-width: $size;
 }
