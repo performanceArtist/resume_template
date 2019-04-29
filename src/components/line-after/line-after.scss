@@ -1,21 +1,16 @@
 .line-after {
-    font-family: 'Conv_Arial-BoldMT';
-    font-size: 19.75pt;
-    font-weight: bold;
-    color: $blue;
-    overflow: hidden;
-    display: inline-block;
-    width: 100%;
-
-    &:after {
-        content:"";
-        display: inline-block;
-        vertical-align: middle;
-        width: 100%;
-        margin-right: -100%;
-        margin-left: 10px;
-        border-top: 3px solid $blue;
-        margin-bottom: 3px;
-    }
+	font-family: 'Conv_Arial-BoldMT';
+	font-size: 1.64583rem;
+	font-weight: bold;
+	color: $blue;
+	display: inline-block;
+	margin-right: 0.8%;
 }
 
+.line-after-line {
+	height: 0.1875rem;
+	background: $blue;
+	overflow: hidden;
+	width: 100%;
+	margin-right: 4.5%;
+}

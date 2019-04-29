@@ -5,7 +5,7 @@ body {
 	font-family: "Conv_ARIALMT";
 }
 
-#content {
+.content {
 	width: 65%;
 	min-width: 320px;
 	max-width: 1920px;
@@ -13,7 +13,7 @@ body {
 }
 
 .row {
-  width: 100%;
+	width: 100%;
 }
 
 .row::after {
@@ -22,35 +22,35 @@ body {
 	display: table;
 }
 
-#left {
+.left {
 	float: left;
 	width: 38.5%;
 	margin-right: 3.5%;
 	padding-top: 7.5%;
 }
 
-#right {
+.right {
 	float: left;
 	width: 58%;
 	padding-top: 5.2%;
 }
 
 //left column
-#avatar {
+.avatar {
 	margin-bottom: 16%;
 }
 
-#profile {
+.profile {
 	margin-bottom: 9.5%;
 	.text {
-		font-size: 7.41pt;
+		font-size: 0.6175rem;
 		margin-right: 19%;
 		line-height: 1.2;
 	}
 }
 
-#contact {
-	font-size: 9.88pt;
+.contact {
+	font-size: 0.823rem;
 
 	.contact-info {
 		margin-bottom: 7.8%;
@@ -62,7 +62,7 @@ body {
 }
 
 //skills
-#skills {
+.skills {
 	.circle-bar {
 		margin-bottom: 3.6%;
 	}
@@ -74,16 +74,16 @@ body {
 
 //right column
 
-#education {
+.education {
 	margin-bottom: 6%;
 }
 
-#education li, #experience li {
+.education li, .experience li {
 	margin-right: 5%;
 	margin-bottom: 4%;
 }
 
-#experience {
+.experience {
 	margin-bottom: 7.5%;
 
 	.title {
@@ -91,11 +91,11 @@ body {
 	}
 }
 
-#software .title {
+.software .title {
 	margin-bottom: 2%;
 }
 
-#softcont {
+.softcont {
 	display: flex;
 	flex-wrap: wrap;
 	padding-left: 2%;
@@ -108,11 +108,11 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-	#content {
+	.content {
 		width: 92%;
 	}
 
-	#right, #left {
+	.right, .left {
 		float: none;
 		width: 100%;
 		margin: 0;

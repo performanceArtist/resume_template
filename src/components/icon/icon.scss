@@ -1,15 +1,15 @@
 .icon {
-    @include circle($icon-size, $icon-background-color);
-    display: inline-table;
-    border: 2px solid white;
+	@include circle($icon-size, $icon-background-color);
+	display: inline-table;
+	border: 2px solid white;
 
-    background-color: $icon-background-color;
-    width: $icon-size;
-    height: $icon-size;
-    text-align: center;
-    i {
-        color: white;
-        line-height: 45px;
-        font-size: 26px;
-    }
+	background-color: $icon-background-color;
+	width: $icon-size;
+	height: $icon-size;
+	text-align: center;
+	i {
+		color: white;
+		line-height: 2.8125rem;
+		font-size: 1.625rem;
+	}
 }
