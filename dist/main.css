@@ -22,7 +22,7 @@ body {
   margin: 0;
   font-family: "Conv_ARIALMT"; }
 
-#content {
+.content {
   width: 65%;
   min-width: 320px;
   max-width: 1920px;
@@ -36,142 +36,24 @@ body {
   clear: both;
   display: table; }
 
-#left {
+.left {
   float: left;
   width: 38.5%;
   margin-right: 3.5%;
   padding-top: 7.5%; }
 
-#right {
+.right {
   float: left;
   width: 58%;
   padding-top: 5.2%; }
 
-#avatar {
-  margin-bottom: 16%; }
-
-#profile {
-  margin-bottom: 9.5%; }
-  #profile .text {
-    font-size: 7.41pt;
-    margin-right: 19%;
-    line-height: 1.2; }
-
-#contact {
-  font-size: 9.88pt; }
-  #contact .contact-info {
-    margin-bottom: 7.8%; }
-  #contact .title {
-    padding-bottom: 7.7%; }
-
-#skills .circle-bar {
-  margin-bottom: 3.6%; }
-
-#skills .title {
-  margin-bottom: 1%; }
-
-#education {
-  margin-bottom: 6%; }
-
-#education li, #experience li {
-  margin-right: 5%;
-  margin-bottom: 4%; }
-
-#experience {
-  margin-bottom: 7.5%; }
-  #experience .title {
-    margin-bottom: 5%; }
-
-#software .title {
-  margin-bottom: 2%; }
-
-#softcont {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 2%; }
-  #softcont .bar {
-    width: 40%;
-    margin-right: 10%;
-    margin-bottom: 3%; }
-
 @media screen and (max-width: 900px) {
-  #content {
+  .content {
     width: 92%; }
-  #right, #left {
+  .right, .left {
     float: none;
     width: 100%;
     margin: 0; } }
-
-.icon {
-  margin: auto;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 0 0 1px #3d6cb0;
-  box-sizing: border-box;
-  height: 49px;
-  min-width: 49px;
-  max-width: 49px;
-  display: inline-table;
-  border: 2px solid white;
-  background-color: #3d6cb0;
-  width: 49px;
-  height: 49px;
-  text-align: center; }
-  .icon i {
-    color: white;
-    line-height: 45px;
-    font-size: 26px; }
-
-.line-after {
-  font-family: 'Conv_Arial-BoldMT';
-  font-size: 19.75pt;
-  font-weight: bold;
-  color: #3d6cb0;
-  overflow: hidden;
-  display: inline-block;
-  width: 100%; }
-  .line-after:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    margin-right: -100%;
-    margin-left: 10px;
-    border-top: 3px solid #3d6cb0;
-    margin-bottom: 3px; }
-
-.avatar {
-  text-align: center;
-  line-height: 1; }
-
-.avatar__img {
-  margin: auto;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 0 0 1px #3d6cb0;
-  box-sizing: border-box;
-  height: 160px;
-  min-width: 160px;
-  max-width: 160px;
-  border: 8px solid white; }
-  .avatar__img img {
-    width: 100%;
-    height: 100%;
-    background-color: #3d6cb0; }
-
-.avatar__name {
-  margin-top: 0.7em;
-  font-size: 33px; }
-
-.avatar__surname {
-  font-family: 'Conv_Arial-BoldMT';
-  font-size: 39px;
-  font-weight: 900; }
-
-.avatar__occupation {
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: 0.6em; }
 
 .info {
   list-style-type: none;
@@ -187,32 +69,32 @@ body {
   .info__name {
     font-family: 'Conv_Arial-BoldMT';
     font-weight: bold;
-    font-size: 12.35pt; }
+    font-size: 1.02916rem; }
   .info__date {
     margin-left: 0.5em; }
   .info__subtitle {
     margin-bottom: 1%;
-    font-size: 12.35pt; }
+    font-size: 1.02916rem; }
   .info__text {
-    font-size: 7.41pt; }
+    font-size: 0.6175rem; }
 
 .bar__bar {
   background-color: #e6e6e6;
-  height: 15px;
-  font-size: 12.35pt;
+  height: 0.9375rem;
+  font-size: 1.02916rem;
   margin-top: 7%; }
 
 .bar__progress {
   background-color: #3d6cb0;
   margin: 0;
-  height: 15px; }
+  height: 0.9375rem; }
 
 .circle-bar__checked, .circle-bar__unchecked {
-  height: 13px;
-  width: 13px;
+  height: 0.8125rem;
+  width: 0.8125rem;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 8px; }
+  margin-right: 0.5rem; }
 
 .circle-bar__checked {
   background-color: #3d6cb0; }
@@ -228,20 +110,129 @@ body {
   text-align: center;
   margin-top: 1%; }
 
-.contact-info .contact-info__title {
-  display: inline-block;
-  color: #3d6cb0;
-  font-weight: bold;
-  width: 30%; }
-
-.contact-info .contact-info__text {
-  width: 70%; }
-
 .title {
   display: flex;
   padding: 0.5em;
   padding-left: 1%;
   align-items: center; }
-  .title .line-after, .title .icon {
-    margin-right: 2%; }
+  .title__icon {
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #3d6cb0;
+    box-sizing: border-box;
+    height: 3.0625rem;
+    min-width: 3.0625rem;
+    max-width: 3.0625rem;
+    display: inline-table;
+    border: 2px solid white;
+    background-color: #3d6cb0;
+    width: 3.0625rem;
+    height: 3.0625rem;
+    text-align: center;
+    margin-right: 3%; }
+    .title__icon i {
+      color: white;
+      line-height: 2.8125rem;
+      font-size: 1.625rem; }
+  .title__text {
+    font-family: 'Conv_Arial-BoldMT';
+    font-size: 1.64583rem;
+    font-weight: bold;
+    color: #3d6cb0;
+    display: inline-block;
+    margin-right: 0.8%; }
+  .title__line {
+    height: 0.1875rem;
+    background: #3d6cb0;
+    overflow: hidden;
+    width: 100%;
+    margin-right: 4.5%; }
+
+.avatar {
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 16%; }
+  .avatar__img {
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #3d6cb0;
+    box-sizing: border-box;
+    height: 10rem;
+    min-width: 10rem;
+    max-width: 10rem;
+    border: 8px solid white; }
+    .avatar__img img {
+      width: 100%;
+      height: 100%;
+      background-color: #3d6cb0; }
+  .avatar__name {
+    margin-top: 0.7em;
+    font-size: 2.0625rem; }
+  .avatar__surname {
+    font-family: 'Conv_Arial-BoldMT';
+    font-size: 2.4375rem;
+    font-weight: 900; }
+  .avatar__occupation {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 0.6em; }
+
+.profile {
+  margin-bottom: 9.5%; }
+  .profile__text {
+    font-size: 0.6175rem;
+    margin-right: 19%;
+    line-height: 1.2; }
+
+.contact {
+  font-size: 0.823rem; }
+  .contact .title {
+    padding-bottom: 7.7%; }
+  .contact__info {
+    margin-bottom: 7.8%; }
+  .contact__title {
+    display: inline-block;
+    color: #3d6cb0;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 30%; }
+  .contact__text {
+    width: 70%; }
+
+.skills .title {
+  margin-bottom: 1%; }
+
+.skills .circle-bar {
+  margin-bottom: 3.6%; }
+
+.education {
+  margin-bottom: 6%; }
+  .education .info {
+    margin-right: 5%;
+    margin-bottom: 4%; }
+    .education .info__name {
+      color: #3d6cb0; }
+
+.experience {
+  margin-bottom: 7.5%; }
+  .experience .title {
+    margin-bottom: 5%; }
+  .experience .info {
+    margin-right: 5%;
+    margin-bottom: 4%; }
+
+.software .title {
+  margin-bottom: 2%; }
+
+.software__barcont {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2%; }
+
+.software .bar {
+  width: 40%;
+  margin-right: 10%;
+  margin-bottom: 3%; }
 
