@@ -1,8 +1,6 @@
 %dot {
-  max-height: $progress-dot-height;
-  max-width: $progress-dot-height;
-  height: 2vw;
-  width: 2vw;
+  height: $progress-dot-height;
+  width: $progress-dot-height;
   border-radius: 50%;
   display: inline-block;
   margin-right: 0.46rem;
