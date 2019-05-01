@@ -8,3 +8,13 @@
     margin-left: 11%;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .skills {
+    .circle-bar {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 3%;
+    }
+  }
+}
