@@ -1,8 +1,8 @@
 include ../../components/title/title
 
-mixin profile(text)
+mixin profile(options)
+  -let{text} = options
   .profile   
     +title('fas fa-user', 'PROFILE')
-    .profile__text
-      block
+    .profile__text #{text}
     

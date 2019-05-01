@@ -1,8 +1,9 @@
-mixin info(data)
-    li.info
-      .info__title
-        span.info__name #{data.title}
-        span.info__date #{data.date}
-      .info__subtitle #{data.subtitle}
-      .info__text #{data.text}
+mixin info(options)
+  -let{title, date, subtitle, text} = options
+  li.info
+    .info__title
+      span.info__name #{title}
+      span.info__date #{date}
+    .info__subtitle #{subtitle}
+    .info__text #{text}
     

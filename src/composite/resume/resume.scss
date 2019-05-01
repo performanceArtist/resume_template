@@ -1,0 +1,36 @@
+.resume {
+  width: 65%;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: auto;
+
+  &__left {
+    float: left;
+    width: 38.5%;
+    margin-right: 3.5%;
+    padding-top: 7.5%;
+  }
+
+  &__right {
+    float: left;
+    width: 58%;
+    padding-top: 5.2%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .resume {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .resume {
+    &__right, &__left {
+      float: none;
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

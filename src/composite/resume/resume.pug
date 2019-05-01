@@ -1,0 +1,21 @@
+include ../avatar/avatar
+include ../profile/profile
+include ../contact/contact
+include ../skills/skills
+
+include ../education/education
+include ../experience/experience
+include ../software/software
+
+mixin resume(data)
+  -let{avatar, profile, contact, skills, education, experience, software} = data
+  .resume
+    .resume__left
+      +avatar(avatar)
+      +profile(profile)
+      +contact(contact)
+      +skills(skills)
+    .resume__right
+      +education(education)
+      +experience(experience)
+      +software(software)

@@ -1,10 +1,11 @@
-mixin circle-bar(text, checked, count=12)
+mixin circle-bar(options, count=12)
+  -let{name, num} = options
   .circle-bar 
-    .circle-bar__text #{text}
+    .circle-bar__text #{name}
     .circle-bar__dots
       - var n = 0;
       while n++ < count
-        if n <= checked
+        if n <= num
           .circle-bar__checked
         else
           .circle-bar__unchecked

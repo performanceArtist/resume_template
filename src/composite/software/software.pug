@@ -1,9 +1,9 @@
 include ../../components/title/title
 include ../../components/bar/bar
 
-mixin software(...args)
+mixin software(options)
   .software
     +title('fas fa-laptop', 'SOFTWARE')
     .software__barcont
-      each val in args
-        +bar(val.name, val.perc)
+      each val in options
+        +bar(val)

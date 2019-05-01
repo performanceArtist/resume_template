@@ -1,5 +1,6 @@
-mixin bar(text, perc)
+mixin bar(options)
+  -let{name, percentage} = options
   .bar
-    .bar__text #{text}
+    .bar__text #{name}
     .bar__bar
-      .bar__progress(style='width:' + perc)
+      .bar__progress(style='width:' + percentage)

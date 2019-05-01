@@ -15,3 +15,21 @@
     margin-bottom: 3%;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .software {
+    &__barcont {
+      flex-direction: column; 
+    }
+  
+    .bar {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 5%;
+
+      &__bar {
+        margin-top: 2.5%;
+      }
+    }
+  }
+}

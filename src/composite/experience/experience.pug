@@ -1,9 +1,9 @@
 include ../../components/title/title
 include ../../components/info/info
 
-mixin experience(...args)
+mixin experience(options)
   .experience
     +title('fas fa-suitcase', 'EXPERIENCE')
     ul
-      each val in args
+      each val in options
         +info(val)
