@@ -1,7 +1,8 @@
 mixin avatar(opt)
+  -let{name, surname, occupation} = opt
   .avatar
     .avatar__img
       img(src=opt.url)
-    .avatar__name #{opt.name}
-    .avatar__surname #{opt.surname}
-    .avatar__occupation #{opt.occupation}
+    .avatar__name #{name}
+    .avatar__surname #{surname}
+    .avatar__occupation #{occupation}
