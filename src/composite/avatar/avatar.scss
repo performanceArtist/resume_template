@@ -1,7 +1,7 @@
 .avatar {
   text-align: center;
   line-height: 1;
-  padding-bottom: 16%;
+  padding-bottom: 14.5%;
 
   &__img {
     @include circle($avatar-size, $avatar-background-color);
@@ -15,7 +15,7 @@
   }
 
   &__name {
-    margin-top: 0.7rem;
+    margin-top: 1.7rem;
     font-size: 2.0625rem;
   }
 

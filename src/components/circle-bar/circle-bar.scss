@@ -3,10 +3,11 @@
   width: $progress-dot-height;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: 0.46rem;
 }
 
 .circle-bar {
+  display: inline-block;
   &__checked {
     @extend %dot;
     background-color: $progress-done-color;
@@ -24,6 +25,5 @@
 
   &__dots {
     text-align: center;
-    margin-top: 1%;
   }
 }
