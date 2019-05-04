@@ -20,7 +20,12 @@
 		width: 30%;
 	}
 	
-  &__text {
+  &__link {
     width: 70%;
+    color: inherit;
+    text-decoration: none;
+    &:visited {
+      color: inherit;
+    }
   }
 }

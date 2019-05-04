@@ -3,7 +3,26 @@ include ../../components/title/title
 mixin contact(options)
   .contact
     +title('fas fa-phone', 'CONTACT')
-    each property in ['address', 'email', 'phone', 'website']
+    -let info = [{
+    -    key:'address',
+    -  },
+    -  {
+    -    key:'email', 
+    -    prependHref:'mailto: '
+    -  },
+    -  {
+    -    key:'phone',
+    -    prependHref:'tel: '
+    -   }, 
+    -   {
+    -    key:'website',
+    -    prependHref: 'http://'
+    -   }]
+
+    each object in info
       .contact__info
-        .contact__title #{property}
-        span.contact__text #{options[property]}
+        .contact__title #{object.key}
+        a.contact__link(
+          href = object.prependHref === undefined ? '' : object.prependHref + options[object.key]
+        )
+          | #{options[object.key]}
