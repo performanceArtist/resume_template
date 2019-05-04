@@ -1,11 +1,11 @@
-mixin circle-bar(options, count=12)
-  -let{name, num} = options
+mixin circle-bar(options, length=12)
+  -let{name, dotCount} = options
   .circle-bar 
     .circle-bar__text #{name}
     .circle-bar__dots
-      - var n = 0;
-      while n++ < count
-        if n <= num
+      - var counter = 0;
+      while counter++ < length
+        if counter <= dotCount
           .circle-bar__checked
         else
           .circle-bar__unchecked

@@ -3,7 +3,7 @@ include ../../components/title/title
 mixin contact(options)
   .contact
     +title('fas fa-phone', 'CONTACT')
-    each pr in ['address', 'email', 'phone', 'website']
+    each property in ['address', 'email', 'phone', 'website']
       .contact__info
-        .contact__title #{pr}
-        span.contact__text #{options[pr]}
+        .contact__title #{property}
+        span.contact__text #{options[property]}

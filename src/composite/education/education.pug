@@ -5,5 +5,5 @@ mixin education(options)
   .education
     +title('fas fa-star', 'EDUCATION')
     ul
-      each val in options
-        +info(val)
+      each object in options
+        +info(object)

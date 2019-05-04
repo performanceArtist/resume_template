@@ -4,5 +4,5 @@ include ../../components/circle-bar/circle-bar
 mixin skills(options)
   .skills
     +title('fas fa-lightbulb', 'SKILLS')
-    each val in options
-      +circle-bar(val)
+    each object in options
+      +circle-bar(object)

@@ -5,5 +5,5 @@ mixin software(options)
   .software
     +title('fas fa-laptop', 'SOFTWARE')
     .software__barcont
-      each val in options
-        +bar(val)
+      each object in options
+        +bar(object)
