@@ -1,16 +1,19 @@
+@import '../../defaults';
+@import '../../mixins';
+
 .avatar {
   text-align: center;
   line-height: 1;
   padding-bottom: 14.5%;
 
   &__img {
-    @include circle($avatar-size, $avatar-background-color);
+    @include circle(9.875rem, $blue);
     border: 0.5rem solid white;
     
     img {
       width: 100%;
       height: 100%;
-      background-color: $avatar-background-color; 
+      background-color: $blue; 
     }
   }
 

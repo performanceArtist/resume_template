@@ -1,15 +1,17 @@
+@import '../../defaults';
+
 .bar {
   &__bar {
-    background-color: $progress-left-color;
-    height: $progress-bar-height;
+    background-color: $light-grey;
+    height: 0.96rem;
     font-size: 1.02916rem;
     margin-top: 7%;
   }
   
   &__progress {
-    background-color: $progress-done-color;
+    background-color: $blue;
     margin: 0;
-    height: $progress-bar-height;
+    height: 0.96rem;;
   }
 
 }
