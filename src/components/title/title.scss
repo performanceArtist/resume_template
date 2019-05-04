@@ -27,7 +27,8 @@ $icon-background-color: $blue;
   }
 
   &__text {
-    font-family: 'Conv_Arial-BoldMT';
+    font-family: $font;
+    font-weight: bold;
     font-size: 1.64583rem;
     font-weight: bold;
     color: $icon-background-color;
