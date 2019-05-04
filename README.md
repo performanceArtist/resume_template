@@ -2,6 +2,8 @@
 
 First FSD task
 
+Github pages link: https://performanceartist.github.io/resume/
+
 ## Usage
 
 Run the following commands:
