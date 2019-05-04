@@ -4,19 +4,20 @@
   max-width: 1920px;
   margin: auto;
 
-  &__left {
-    float: left;
-    width: 38.5%;
-    margin-right: 3.5%;
-    padding-top: 7.5%;
-  }
+  &__column {
+    &_left {
+      float: left;
+      width: 38.5%;
+      margin-right: 3.5%;
+      padding-top: 7.5%;
+    }
 
-  &__right {
-    float: left;
-    width: 58%;
-    padding-top: 5.2%;
+    &_right {
+      float: left;
+      width: 58%;
+      padding-top: 5.2%;
+    }
   }
-
 }
 
 @media screen and (max-width: 1100px) {
