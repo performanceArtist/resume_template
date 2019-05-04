@@ -4,6 +4,6 @@ include ../../components/info/info
 mixin education(options)
   .education
     +title('fas fa-star', 'EDUCATION')
-    ul
+    ul.education__list
       each object in options
         +info(object)

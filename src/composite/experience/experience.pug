@@ -4,6 +4,6 @@ include ../../components/info/info
 mixin experience(options)
   .experience
     +title('fas fa-suitcase', 'EXPERIENCE')
-    ul
+    ul.experience__list
       each object in options
         +info(object)
