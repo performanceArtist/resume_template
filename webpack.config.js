@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin= require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
   entry: {
@@ -9,17 +9,16 @@ const config = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "main.js",
-    publicPath: '/'
+    filename: 'main.js'
   },
 
   devServer: {
-    port: 5000,
+    port: 5000
   },
 
   module: {
     rules: [
-      { 
+      {
         test: /\.pug$/,
         use: ['pug-loader']
       },
@@ -27,23 +26,25 @@ const config = {
         test: /\.(sa|sc|c)ss$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: MiniCssExtractPlugin.loader
           },
           'css-loader',
           'sass-loader'
         ]
       },
       {
-        test: /[a-z]*\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [{
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
             loader: 'file-loader',
             options: {
-                name: '[name].[ext]',
-                outputPath: 'fonts/'
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
             }
-        }]
+          }
+        ]
       }
-    ],
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -51,8 +52,18 @@ const config = {
     }),
     new MiniCssExtractPlugin({
       filename: 'main.css'
-    }),
-  ],
+    })
+  ]
 };
 
-module.exports = config;
+module.exports = (env, options) => {
+  if (options.mode === 'production') {
+    config.output.publicPath = '/resume/';
+  }
+
+  if (options.mode === 'development') {
+    config.devtool = 'source-map';
+  }
+
+  return config;
+};
