@@ -1,25 +1,23 @@
-@import '../../defaults';
-
 .contact {
   font-size: 0.823rem;
   padding-bottom: 2.5%;
-  
+
   .title {
-		margin-bottom: 5%;
+    margin-bottom: 5%;
   }
-  
+
   &__info {
-		margin-bottom: 7%;
+    margin-bottom: 7%;
   }
-  
+
   &__title {
-		display: inline-block;
-		color: $blue;
+    display: inline-block;
+    color: $blue;
     font-weight: bold;
     text-transform: uppercase;
-		width: 30%;
-	}
-	
+    width: 30%;
+  }
+
   &__link {
     width: 70%;
     color: inherit;

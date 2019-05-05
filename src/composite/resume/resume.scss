@@ -29,7 +29,8 @@
 @media screen and (max-width: 750px) {
   .resume {
     &__column {
-      &_right, &_left {
+      &_right,
+      &_left {
         float: none;
         width: 100%;
         margin: 0;

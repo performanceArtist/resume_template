@@ -1,3 +1,8 @@
+$blue: #3d6cb0;
+$light-grey: #e6e6e6;
+
+$font: 'Conv_ARIALMT', Arial;
+
 @mixin circle($size, $outer-color) {
   margin: auto;
   border-radius: 50%;
