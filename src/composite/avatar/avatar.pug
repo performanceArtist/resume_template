@@ -8,7 +8,7 @@ mixin avatar(options)
   -let {url, name, surname, occupation} = Object.assign(defaults, options)
   .avatar
     .avatar__image-container
-      img.avatar__image(src=url)
+      img.avatar__image(src=url, alt='avatar')
     .avatar__name #{name}
     .avatar__surname #{surname}
     .avatar__occupation #{occupation}

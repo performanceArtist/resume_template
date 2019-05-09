@@ -1,5 +1,5 @@
 import './fonts/arialmt/fonts.css';
-import './fonts/arialmt_bold/fonts.css';
+import './fonts/arialmt-bold/fonts.css';
 import './favicons';
 
 import './main.scss';

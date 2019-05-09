@@ -21,15 +21,20 @@ mixin contact(options)
   - }, 
   - {
   -  key:'website',
-  -  prependHref: 'http://'
+  -  prependHref: 'http://',
+  -  attributes: {
+  -    target:'_blank',
+  -    rel:'noopener noreferrer'
+  -  }
   - }]
   .contact
     +title('fas fa-phone', 'CONTACT')
 
     each object in info
+      -let {key, prependHref = '', attributes = {}} = object
       .contact__info
-        .contact__title #{object.key}
+        .contact__title #{key}
         a.contact__link(
-          href = object.prependHref === undefined ? '' : object.prependHref + validObject[object.key]
-        )
-          | #{validObject[object.key]}
+          href = prependHref + validObject[key]
+        )&attributes(attributes)
+          | #{validObject[key]}
