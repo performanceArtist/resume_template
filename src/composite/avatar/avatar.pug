@@ -1,5 +1,11 @@
 mixin avatar(options)
-  -let{name, surname, occupation, url} = options
+  -let defaults = {
+  -  url:'', 
+  -  name:'NAME HERE',
+  -  surname:'SURNAME',
+  -  occupation:'OCCUPATION'
+  -}
+  -let {url, name, surname, occupation} = Object.assign(defaults, options)
   .avatar
     .avatar__image-container
       img.avatar__image(src=url)

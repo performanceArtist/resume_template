@@ -2,7 +2,8 @@ include ../../components/title/title
 include ../../components/circle-bar/circle-bar
 
 mixin skills(options)
+  -let array = options instanceof Array ? options : [{}]
   .skills
     +title('fas fa-lightbulb', 'SKILLS')
-    each object in options
+    each object in array
       +circle-bar(object)

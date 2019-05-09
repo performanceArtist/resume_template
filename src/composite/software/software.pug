@@ -2,8 +2,9 @@ include ../../components/title/title
 include ../../components/bar/bar
 
 mixin software(options)
+  -let array = options instanceof Array ? options : [{}]
   .software
     +title('fas fa-laptop', 'SOFTWARE')
     .software__barcont
-      each object in options
+      each object in array
         +bar(object)
