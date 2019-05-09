@@ -1,6 +1,4 @@
-mixin circle-bar(options, length=12)
-  -let defaults = {name:'Name', dotCount:6}
-  -let {name, dotCount} = Object.assign(defaults, options)
+mixin circle-bar({name = 'Name', dotCount=6} = {}, length=12)
   .circle-bar 
     .circle-bar__text #{name}
     .circle-bar__dots

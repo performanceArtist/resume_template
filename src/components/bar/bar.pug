@@ -1,6 +1,4 @@
-mixin bar(options)
-  -let defaults = {name:'Name', percentage:'50%'}
-  -let {name, percentage} = Object.assign(defaults, options)
+mixin bar({name='Name', percentage='50%'} = {})
   .bar
     .bar__text #{name}
     .bar__bar

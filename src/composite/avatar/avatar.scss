@@ -1,17 +1,16 @@
 .avatar {
   text-align: center;
-  line-height: 1;
   padding-bottom: 14.5%;
 
   &__image-container {
     @include circle(9.875rem, $blue);
     border: 0.5rem solid white;
+    background-color: $blue;
   }
 
   &__image {
     width: 100%;
     height: 100%;
-    background-color: $blue;
   }
 
   &__name {
@@ -24,6 +23,12 @@
     font-weight: bold;
     font-size: 2.4375rem;
     text-transform: uppercase;
+  }
+
+  &__name,
+  &__surname {
+    line-height: 2.2rem;
+    word-wrap: break-word;
   }
 
   &__occupation {

@@ -1,5 +1,4 @@
-mixin info(options)
-  -let{title, date, subtitle, text} = options
+mixin info({title, date, subtitle, text} = {})
   li.info
     .info__title
       span.info__name #{title}

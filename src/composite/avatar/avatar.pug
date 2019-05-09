@@ -1,11 +1,4 @@
-mixin avatar(options)
-  -let defaults = {
-  -  url:'', 
-  -  name:'NAME HERE',
-  -  surname:'SURNAME',
-  -  occupation:'OCCUPATION'
-  -}
-  -let {url, name, surname, occupation} = Object.assign(defaults, options)
+mixin avatar({url='', name='NAME HERE', surname='SURNAME', occupation='OCCUPATION'} = {})
   .avatar
     .avatar__image-container
       img.avatar__image(src=url, alt='avatar')
