@@ -39,7 +39,20 @@ const config = {
         ]
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(svg|png|ico|xml|json)$/,
+        include: [path.resolve(__dirname, 'src/favicons')],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'favicon/'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(woff|eot|otf|svg|ttf)?$/,
         use: [
           {
             loader: 'file-loader',
