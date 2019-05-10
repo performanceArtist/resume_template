@@ -1,40 +1,45 @@
 include ../../components/title/title
 
-mixin contact(options)
-  -let defaults = {
-  -  address:'Main Street, City.', 
-  -  email:'contact@domain.com', 
-  -  phone:'555-555-555', 
-  -  website:'www.yourweb.com'
-  -}
-  -let validObject = Object.assign(defaults, options)
+mixin contact(options = {})
+  -let {
+  -  address = 'Main Street, City.', 
+  -  email = 'contact@domain.com', 
+  -  phone = '555-555-555', 
+  -  website = 'www.yourweb.com'
+  -} = options
+
   -let info = [{
-  -  key:'address',
-  -},
-  -{
-  -  key:'email', 
-  -  prependHref:'mailto: '
-  -},
-  -{
-  -  key:'phone',
+  -  title:'address',
+  -  value: address
+  - },
+  - {
+  -   title:'e-mail', 
+  -   value: email,
+  -   prependHref:'mailto: '
+  - },
+  - {
+  -  title:'phone',
+  -  value: phone,
   -  prependHref:'tel: '
   - }, 
   - {
-  -  key:'website',
+  -  title:'website',
+  -  value: website,
   -  prependHref: 'http://',
   -  attributes: {
   -    target:'_blank',
   -    rel:'noopener noreferrer'
   -  }
   - }]
+
   .contact
     +title('fas fa-phone', 'CONTACT')
-
+    
     each object in info
-      -let {key, prependHref = '', attributes = {}} = object
+      -let {title, value, prependHref = '', attributes = {}} = object
       .contact__info
-        .contact__title #{key}
+        .contact__title #{title}
         a.contact__link(
-          href = prependHref + validObject[key]
+          href = prependHref + value
         )&attributes(attributes)
-          | #{validObject[key]}
+          | #{value}

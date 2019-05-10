@@ -3,14 +3,8 @@ include ../../components/info/info
 
 mixin experience(options)
   -let array = options instanceof Array ? options : [{}]
-  -let defaults = {
-  -  title:'COMPANY NAME', 
-  -  subtitle:'YOUR JOB HERE', 
-  -  date:'//Feb 2011 - June 2012', 
-  -  text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
-  -}
   .experience
     +title('fas fa-suitcase', 'EXPERIENCE')
     ul.experience__list
       each object in array
-        +info(Object.assign(defaults, object))
+        +info(object)
