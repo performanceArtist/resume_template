@@ -1,24 +1,22 @@
-%dot {
-  height: 0.8125rem;
-  width: 0.8125rem;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 0.46rem;
-}
-
 .circle-bar {
   $progress-done-color: $blue;
   $progress-left-color: $light-grey;
   display: inline-block;
 
-  &__checked {
-    @extend %dot;
-    background-color: $progress-done-color;
-  }
+  &__dot {
+    height: 0.8125rem;
+    width: 0.8125rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.46rem;
 
-  &__unchecked {
-    @extend %dot;
-    background-color: $progress-left-color;
+    &_checked {
+      background-color: $progress-done-color;
+    }
+
+    &_unchecked {
+      background-color: $progress-left-color;
+    }
   }
 
   &__text {

@@ -5,6 +5,6 @@ mixin circle-bar({name = 'Name', dotCount=6, length = 12} = {})
       - var counter = 0;
       while counter++ < length
         if counter <= dotCount
-          .circle-bar__checked
+          .circle-bar__dot.circle-bar__dot_checked
         else
-          .circle-bar__unchecked
+          .circle-bar__dot.circle-bar__dot_unchecked
