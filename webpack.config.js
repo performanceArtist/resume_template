@@ -39,7 +39,7 @@ const config = {
         ]
       },
       {
-        test: /\.(svg|png|ico|xml|json)$/,
+        test: /\.(svg|png|ico|xml|json|manifest)$/,
         include: [path.resolve(__dirname, 'src/favicons')],
         use: [
           {
@@ -53,6 +53,7 @@ const config = {
       },
       {
         test: /\.(woff|eot|otf|svg|ttf)?$/,
+        include: [path.resolve(__dirname, 'src/fonts')],
         use: [
           {
             loader: 'file-loader',
