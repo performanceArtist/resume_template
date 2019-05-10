@@ -6,7 +6,7 @@ mixin contact(options = {})
   -  email = 'contact@domain.com', 
   -  phone = '555-555-555', 
   -  website = 'www.yourweb.com'
-  -} = options
+  -} = options;
 
   -let info = [{
   -  title:'address',
@@ -30,13 +30,13 @@ mixin contact(options = {})
   -    target:'_blank',
   -    rel:'noopener noreferrer'
   -  }
-  - }]
+  - }];
 
   section.contact
     +title('fas fa-phone', 'CONTACT')
     
     each object in info
-      -let {title, value, prependHref = '', attributes = {}} = object
+      -let {title, value, prependHref = '', attributes = {}} = object;
       .contact__info
         .contact__title #{title}
         a.contact__link(

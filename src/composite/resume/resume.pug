@@ -8,7 +8,7 @@ include ../experience/experience
 include ../software/software
 
 mixin resume(data)
-  -let{avatar, profile, contact, skills, education, experience, software} = data
+  -let{avatar, profile, contact, skills, education, experience, software} = data;
   article.resume
     section.resume__column.resume__column_left
       +avatar(avatar)

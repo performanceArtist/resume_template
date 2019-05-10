@@ -2,7 +2,7 @@ include ../../components/title/title
 include ../../components/info/info
 
 mixin experience(options)
-  -let array = options instanceof Array ? options : [{}]
+  -let array = options instanceof Array ? options : [{}];
   section.experience
     +title('fas fa-suitcase', 'EXPERIENCE')
     ul.experience__list

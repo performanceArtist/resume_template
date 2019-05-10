@@ -2,7 +2,7 @@ include ../../components/title/title
 include ../../components/bar/bar
 
 mixin software(options)
-  -let array = options instanceof Array ? options : [{}]
+  -let array = options instanceof Array ? options : [{}];
   section.software
     +title('fas fa-laptop', 'SOFTWARE')
     .software__barcont

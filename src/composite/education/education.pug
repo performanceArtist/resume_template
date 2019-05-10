@@ -2,7 +2,7 @@ include ../../components/title/title
 include ../../components/info/info
 
 mixin education(options)
-  -let array = options instanceof Array ? options : [{}]
+  -let array = options instanceof Array ? options : [{}];
   section.education
     +title('fas fa-star', 'EDUCATION')
     ul.education__list
