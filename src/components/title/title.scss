@@ -8,12 +8,15 @@ $icon-background-color: $blue;
   align-items: center;
 
   &__icon {
-    @include circle($icon-size, $icon-background-color);
-    display: inline-table;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 0.0625rem $icon-background-color;
+    box-sizing: border-box;
+    height: $icon-size;
+    min-width: $icon-size;
+    max-width: $icon-size;
     border: 0.125rem solid white;
     background-color: $icon-background-color;
-    width: $icon-size;
-    height: $icon-size;
     text-align: center;
     i {
       color: white;

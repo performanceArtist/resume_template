@@ -2,15 +2,3 @@ $blue: #3d6cb0;
 $light-grey: #e6e6e6;
 
 $font: 'conv-arialmt', Arial;
-
-@mixin circle($size, $outer-color) {
-  margin: auto;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 0 0 0.0625rem $outer-color;
-  box-sizing: border-box;
-  height: $size;
-  //sort of a hack, but works in Firefox/Chrome
-  min-width: $size;
-  max-width: $size;
-}

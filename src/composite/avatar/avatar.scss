@@ -3,7 +3,14 @@
   padding-bottom: 14.5%;
 
   &__image-container {
-    @include circle(9.875rem, $blue);
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 0.0625rem $blue;
+    box-sizing: border-box;
+    height: 9.875rem;
+    min-width: 9.875rem;
+    max-width: 9.875rem;
     border: 0.5rem solid white;
     background-color: $blue;
   }
