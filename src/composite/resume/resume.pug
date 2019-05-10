@@ -9,13 +9,13 @@ include ../software/software
 
 mixin resume(data)
   -let{avatar, profile, contact, skills, education, experience, software} = data
-  .resume
-    .resume__column.resume__column_left
+  article.resume
+    section.resume__column.resume__column_left
       +avatar(avatar)
       +profile(profile)
       +contact(contact)
       +skills(skills)
-    .resume__column.resume__column_right
+    section.resume__column.resume__column_right
       +education(education)
       +experience(experience)
       +software(software)

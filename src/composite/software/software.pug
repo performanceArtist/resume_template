@@ -3,7 +3,7 @@ include ../../components/bar/bar
 
 mixin software(options)
   -let array = options instanceof Array ? options : [{}]
-  .software
+  section.software
     +title('fas fa-laptop', 'SOFTWARE')
     .software__barcont
       each object in array

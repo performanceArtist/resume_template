@@ -35,33 +35,34 @@ html(lang='en')
     -  text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'
     -}
 
-    +resume({
-      avatar: {
-        url:'https://m-ch.ml/rand/r7/64.jpeg', 
-        name:'name here',
-        surname:'SURNAME',
-        occupation:'GRAPHIC DESIGNER'
-      },
-      profile: {
-        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu b ',
-        boldText: 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.'
-      },
-      contact: {
-          address:'Main Street, City.', 
-          email:'contact@domain.com', 
-          phone:'555-555-555', 
-          website:'www.yourweb.com'
-      },
-      skills: [{name:'CREATIVE', dotCount:3},
-               {name:'TEAMWORK', dotCount:4},
-               {name:'INNOVATIVE', dotCount:9},
-               {name:'COMMUNICATION', dotCount:12}],
-      education: [edu, edu, edu, edu],
-      experience: [exp, exp, exp],
-      software: [{name: 'PHOTOSHOP', percentage:'60%'},
-                 {name: 'DREAMWEAVER', percentage:'60%'},
-                 {name: 'ILLUSTRATOR', percentage:'60%'},
-                 {name: 'AFTER EFFECTS', percentage:'60%'},
-                 {name: 'INDESIGN', percentage:'60%'},
-                 {name: 'HTML&CSS3', percentage:'60%'}]
+    main
+      +resume({
+        avatar: {
+          url:'https://m-ch.ml/rand/r7/64.jpeg', 
+          name:'name here',
+          surname:'SURNAME',
+          occupation:'GRAPHIC DESIGNER'
+        },
+        profile: {
+          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu b ',
+          boldText: 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.'
+        },
+        contact: {
+            address:'Main Street, City.', 
+            email:'contact@domain.com', 
+            phone:'555-555-555', 
+            website:'www.yourweb.com'
+        },
+        skills: [{name:'CREATIVE', dotCount:3},
+                 {name:'TEAMWORK', dotCount:4},
+                 {name:'INNOVATIVE', dotCount:9},
+                 {name:'COMMUNICATION', dotCount:12}],
+        education: [edu, edu, edu, edu],
+        experience: [exp, exp, exp],
+        software: [{name: 'PHOTOSHOP', percentage:'60%'},
+                   {name: 'DREAMWEAVER', percentage:'60%'},
+                   {name: 'ILLUSTRATOR', percentage:'60%'},
+                   {name: 'AFTER EFFECTS', percentage:'60%'},
+                   {name: 'INDESIGN', percentage:'60%'},
+                   {name: 'HTML&CSS3', percentage:'60%'}]
 })

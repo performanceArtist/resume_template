@@ -3,7 +3,7 @@ include ../../components/info/info
 
 mixin experience(options)
   -let array = options instanceof Array ? options : [{}]
-  .experience
+  section.experience
     +title('fas fa-suitcase', 'EXPERIENCE')
     ul.experience__list
       each object in array

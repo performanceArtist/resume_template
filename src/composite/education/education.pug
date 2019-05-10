@@ -3,7 +3,7 @@ include ../../components/info/info
 
 mixin education(options)
   -let array = options instanceof Array ? options : [{}]
-  .education
+  section.education
     +title('fas fa-star', 'EDUCATION')
     ul.education__list
       each object in array

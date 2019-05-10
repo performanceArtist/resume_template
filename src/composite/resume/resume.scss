@@ -4,6 +4,12 @@
   max-width: 1920px;
   margin: auto;
 
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
   &__column {
     &_left {
       float: left;
