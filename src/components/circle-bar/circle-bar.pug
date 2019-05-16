@@ -1,5 +1,5 @@
-mixin circle-bar({name = 'Name', checked = 6, total = 12} = {})
-  .circle-bar 
+mixin circle-bar({modifier = '', name = 'Name', checked = 6, total = 12} = {})
+  div(class = modifier === '' ? 'circle-bar' : `circle-bar ${modifier}__circle-bar`)
     .circle-bar__text #{name}
     .circle-bar__dots
       - let counter = 0;

@@ -22,6 +22,7 @@ html(lang='en')
     title Resume template
   body
     -let edu = {
+    -  modifier:'education',
     -  title:'MASTER DEGREE', 
     -  subtitle:'UNIVERSITY NAME',
     -  date:'//Feb 2011 - June 2012',
@@ -29,6 +30,7 @@ html(lang='en')
     -};
     
     -let exp = {
+    -  modifier: 'experience',
     -  title:'COMPANY NAME', 
     -  subtitle:'YOUR JOB HERE', 
     -  date:'//Feb 2011 - June 2012', 
@@ -53,16 +55,16 @@ html(lang='en')
             phone:'555-555-555', 
             website:'www.yourweb.com'
         },
-        skills: [{name:'CREATIVE', checked:3, total: 12},
-                 {name:'TEAMWORK', checked:4, total: 12},
-                 {name:'INNOVATIVE', checked:9, total: 12},
-                 {name:'COMMUNICATION', checked:12, total: 12}],
+        skills: [{modifier:'skills', name:'CREATIVE', checked:3, total: 12},
+                 {modifier:'skills', name:'TEAMWORK', checked:4, total: 12},
+                 {modifier:'skills', name:'INNOVATIVE', checked:9, total: 12},
+                 {modifier:'skills', name:'COMMUNICATION', checked:12, total: 12}],
         education: [edu, edu, edu, edu],
         experience: [exp, exp, exp],
-        software: [{name: 'PHOTOSHOP', percentage:'60%'},
-                   {name: 'DREAMWEAVER', percentage:'60%'},
-                   {name: 'ILLUSTRATOR', percentage:'60%'},
-                   {name: 'AFTER EFFECTS', percentage:'60%'},
-                   {name: 'INDESIGN', percentage:'60%'},
-                   {name: 'HTML&CSS3', percentage:'60%'}]
+        software: [{modifier:'software', name: 'PHOTOSHOP', percentage:'60%'},
+                   {modifier:'software', name: 'DREAMWEAVER', percentage:'60%'},
+                   {modifier:'software', name: 'ILLUSTRATOR', percentage:'60%'},
+                   {modifier:'software', name: 'AFTER EFFECTS', percentage:'60%'},
+                   {modifier:'software', name: 'INDESIGN', percentage:'60%'},
+                   {modifier:'software', name: 'HTML&CSS3', percentage:'60%'}]
 })

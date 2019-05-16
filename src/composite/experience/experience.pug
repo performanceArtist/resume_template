@@ -1,9 +1,9 @@
-include ../../components/title/title
+include ../../components/section-title/section-title
 include ../../components/info/info
 
 mixin experience(objects = [{}])
   section.experience
-    +title({icon:'fas fa-suitcase', title:'EXPERIENCE'})
+    +section-title({icon:'fas fa-suitcase', title:'EXPERIENCE', modifier:'experience'})
     ul.experience__list
       each object in objects
         +info(object)

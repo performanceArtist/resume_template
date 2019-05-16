@@ -1,9 +1,9 @@
-include ../../components/title/title
+include ../../components/section-title/section-title
 include ../../components/bar/bar
 
 mixin software(objects = [{}])
   section.software
-    +title({icon:'fas fa-laptop', title:'SOFTWARE'})
+    +section-title({icon:'fas fa-laptop', title:'SOFTWARE', modifier:'software'})
     .software__barcont
       each object in objects
         +bar(object)

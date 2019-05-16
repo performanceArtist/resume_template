@@ -1,0 +1,6 @@
+mixin section-title({icon = 'fas fa-lightbulb', title = 'Icon', modifier = ''} = {})
+  header(class = modifier === '' ? 'section-title' : `section-title ${modifier}__section-title`)
+    .section-title__icon
+      i(class=`${icon}`)
+    .section-title__text #{title}
+    .section-title__line

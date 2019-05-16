@@ -1,4 +1,4 @@
-include ../../components/title/title
+include ../../components/section-title/section-title
 
 mixin contact(options = {})
   -let {
@@ -33,7 +33,7 @@ mixin contact(options = {})
   - }];
 
   section.contact
-    +title({icon:'fas fa-phone', title:'CONTACT'})
+    +section-title({icon:'fas fa-phone', title:'CONTACT', modifier:'contact'})
     
     each object in info
       -let {title, value, prependHref = '', attributes = {}} = object;

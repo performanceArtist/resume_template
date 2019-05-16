@@ -1,8 +1,8 @@
-include ../../components/title/title
+include ../../components/section-title/section-title
 include ../../components/circle-bar/circle-bar
 
 mixin skills(objects = [{}])
   section.skills
-    +title({icon:'fas fa-lightbulb', title:'SKILLS'})
+    +section-title({icon:'fas fa-lightbulb', title:'SKILLS', modifier:'skills'})
     each object in objects
       +circle-bar(object)

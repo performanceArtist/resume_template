@@ -1,15 +1,15 @@
 .education {
   padding-bottom: 2%;
 
-  .title {
+  &__title {
     margin-bottom: 3%;
   }
 
-  .info {
+  &__info {
     margin-right: 5%;
     margin-bottom: 1.8%;
 
-    &__name {
+    .info__name {
       color: $blue;
     }
   }

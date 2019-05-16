@@ -1,4 +1,4 @@
-include ../../components/title/title
+include ../../components/section-title/section-title
 
 mixin profile(options = {})
   -let {
@@ -7,7 +7,7 @@ mixin profile(options = {})
   -} = options;
 
   section.profile   
-    +title({icon:'fas fa-user', title:'PROFILE'})
+    +section-title({icon:'fas fa-user', title:'PROFILE'})
     p.profile__text 
       | #{text}
       span.profile__crucial-info #{boldText}

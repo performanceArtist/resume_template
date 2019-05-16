@@ -1,5 +1,5 @@
 .software {
-  .title {
+  &__section-title {
     margin-bottom: 1.8%;
   }
 
@@ -9,7 +9,7 @@
     padding-left: 2%;
   }
 
-  .bar {
+  &__bar {
     width: 40%;
     margin-right: 10%;
     margin-bottom: 3%;
