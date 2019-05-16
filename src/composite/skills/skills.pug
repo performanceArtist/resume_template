@@ -1,9 +1,8 @@
 include ../../components/title/title
 include ../../components/circle-bar/circle-bar
 
-mixin skills(options)
-  -let array = options instanceof Array ? options : [{}];
+mixin skills(objects = [{}])
   section.skills
-    +title('fas fa-lightbulb', 'SKILLS')
-    each object in array
+    +title({icon:'fas fa-lightbulb', title:'SKILLS'})
+    each object in objects
       +circle-bar(object)

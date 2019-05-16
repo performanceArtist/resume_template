@@ -7,7 +7,7 @@ mixin profile(options = {})
   -} = options;
 
   section.profile   
-    +title('fas fa-user', 'PROFILE')
+    +title({icon:'fas fa-user', title:'PROFILE'})
     p.profile__text 
       | #{text}
       span.profile__crucial-info #{boldText}

@@ -1,10 +1,9 @@
 include ../../components/title/title
 include ../../components/info/info
 
-mixin education(options)
-  -let array = options instanceof Array ? options : [{}];
+mixin education(objects = [{}])
   section.education
-    +title('fas fa-star', 'EDUCATION')
+    +title({icon:'fas fa-star', title:'EDUCATION'})
     ul.education__list
-      each object in array
+      each object in objects
         +info(object) 
