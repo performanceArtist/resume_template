@@ -1,7 +1,8 @@
 mixin avatar({url='', name='NAME HERE', surname='SURNAME', occupation='OCCUPATION'} = {})
   section.avatar
-    .avatar__image-container
-      img.avatar__image(src=url, alt='avatar')
-    .avatar__name #{name}
-    .avatar__surname #{surname}
-    .avatar__occupation #{occupation}
+    .avatar__content
+      .avatar__image-container
+        img.avatar__image(src=url, alt='avatar')
+      .avatar__name #{name}
+      .avatar__surname #{surname}
+      .avatar__occupation #{occupation}

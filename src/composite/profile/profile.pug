@@ -8,7 +8,8 @@ mixin profile(options = {})
 
   section.profile   
     +section-title({icon:'fas fa-user', title:'PROFILE'})
-    p.profile__text 
-      | #{text}
-      span.profile__crucial-info #{boldText}
+    .profile__content
+      p.profile__text 
+        | #{text}
+        span.profile__crucial-info #{boldText}
     

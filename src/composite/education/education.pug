@@ -5,7 +5,8 @@ mixin education(objects = [{}])
   section.education
     .education__header
       +section-title({icon:'fas fa-star', title:'EDUCATION'})
-    ul.education__list
-      each object in objects
-        .education__info
-          +info(object) 
+    .education__content
+      ul.education__list
+        each object in objects
+          .education__info
+            +info(object) 

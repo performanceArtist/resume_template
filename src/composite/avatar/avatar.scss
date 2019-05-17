@@ -1,6 +1,9 @@
 .avatar {
   text-align: center;
-  padding-bottom: 14.5%;
+
+  &__content {
+    padding-bottom: 14.5%;
+  }
 
   &__image-container {
     margin: auto;

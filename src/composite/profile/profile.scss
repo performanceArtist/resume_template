@@ -1,5 +1,7 @@
 .profile {
-  padding-bottom: 7%;
+  &__content {
+    padding-bottom: 7%;
+  }
 
   &__text {
     font-size: 0.6175rem;

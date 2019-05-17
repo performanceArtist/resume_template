@@ -1,9 +1,12 @@
 .contact {
   font-size: 0.823rem;
-  padding-bottom: 2.5%;
 
   &__header {
     margin-bottom: 5%;
+  }
+
+  &__content {
+    padding-bottom: 2.5%;
   }
 
   &__info {
