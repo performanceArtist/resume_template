@@ -1,5 +1,5 @@
-mixin bar({modifier = '', name = 'Name', percentage = '50%'} = {})
-  div(class = modifier === '' ? 'bar' : `bar ${modifier}__bar`)
+mixin bar({name = 'Name', percentage = '50%'} = {})
+  div.bar
     .bar__text #{name}
     .bar__bar
       .bar__progress(style='width:' + percentage)

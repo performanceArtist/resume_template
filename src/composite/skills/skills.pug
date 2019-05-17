@@ -3,6 +3,8 @@ include ../../components/circle-bar/circle-bar
 
 mixin skills(objects = [{}])
   section.skills
-    +section-title({icon:'fas fa-lightbulb', title:'SKILLS', modifier:'skills'})
+    .skills__header
+      +section-title({icon:'fas fa-lightbulb', title:'SKILLS'})
     each object in objects
-      +circle-bar(object)
+      .skills__circle-bar
+        +circle-bar(object)

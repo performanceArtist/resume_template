@@ -33,7 +33,8 @@ mixin contact(options = {})
   - }];
 
   section.contact
-    +section-title({icon:'fas fa-phone', title:'CONTACT', modifier:'contact'})
+    .contact__header
+      +section-title({icon:'fas fa-phone', title:'CONTACT'})
     
     each object in info
       -let {title, value, prependHref = '', attributes = {}} = object;

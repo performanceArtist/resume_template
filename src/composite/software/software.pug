@@ -3,7 +3,9 @@ include ../../components/bar/bar
 
 mixin software(objects = [{}])
   section.software
-    +section-title({icon:'fas fa-laptop', title:'SOFTWARE', modifier:'software'})
+    .software__header
+      +section-title({icon:'fas fa-laptop', title:'SOFTWARE'})
     .software__barcont
       each object in objects
-        +bar(object)
+        .software__bar
+          +bar(object)
