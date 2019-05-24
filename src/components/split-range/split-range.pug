@@ -1,0 +1,10 @@
+mixin split-range({name = 'Name', checked = 6, total = 12} = {})
+  .split-range
+    .split-range__description #{name}
+    .split-range__items
+      - let counter = 0;
+      while counter++ < total
+        if counter <= checked
+          .split-range__item.split-range__item_checked
+        else
+          .split-range__item

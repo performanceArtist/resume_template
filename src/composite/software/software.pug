@@ -1,11 +1,11 @@
 include ../../components/section-title/section-title
-include ../../components/bar/bar
+include ../../components/range/range
 
-mixin software(objects = [{}])
+mixin software(programs = [{}])
   section.software
     .software__header
       +section-title({icon:'fas fa-laptop', title:'SOFTWARE'})
-    .software__barcont
-      each object in objects
-        .software__bar
-          +bar(object)
+    .software__content
+      each program in programs
+        .software__range
+          +range(program)

@@ -1,12 +1,12 @@
 include ../../components/section-title/section-title
 include ../../components/info/info
 
-mixin education(objects = [{}])
+mixin education(educations = [{}])
   section.education
     .education__header
       +section-title({icon:'fas fa-star', title:'EDUCATION'})
     .education__content
       ul.education__list
-        each object in objects
+        each education in educations
           .education__info
-            +info(object) 
+            +info(education) 

@@ -1,9 +1,9 @@
-.circle-bar {
+.split-range {
   $progress-done-color: $blue;
   $progress-left-color: $light-grey;
   display: inline-block;
 
-  &__dot {
+  &__item {
     height: 0.8125rem;
     width: 0.8125rem;
     border-radius: 50%;
@@ -16,13 +16,13 @@
     }
   }
 
-  &__text {
+  &__description {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1%;
   }
 
-  &__dots {
+  &__items {
     text-align: center;
   }
 }

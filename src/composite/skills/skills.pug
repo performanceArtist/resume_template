@@ -1,10 +1,10 @@
 include ../../components/section-title/section-title
-include ../../components/circle-bar/circle-bar
+include ../../components/split-range/split-range
 
-mixin skills(objects = [{}])
+mixin skills(skills = [{}])
   section.skills
     .skills__header
       +section-title({icon:'fas fa-lightbulb', title:'SKILLS'})
-    each object in objects
-      .skills__circle-bar
-        +circle-bar(object)
+    each skill in skills
+      .skills__split-range
+        +split-range(skill)
