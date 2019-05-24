@@ -1,6 +1,7 @@
 mixin section-title({icon = 'fas fa-lightbulb', title = 'Icon'} = {})
   header.section-title
-    .section-title__icon
-      i(class=`${icon}`)
-    .section-title__text #{title}
-    .section-title__line
+    .section-title__content
+      .section-title__icon
+        i(class=`${icon}`)
+      .section-title__text #{title}
+      .section-title__line

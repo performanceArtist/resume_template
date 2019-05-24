@@ -9,13 +9,10 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 0.46rem;
+    background-color: $progress-left-color;
 
     &_checked {
       background-color: $progress-done-color;
-    }
-
-    &_unchecked {
-      background-color: $progress-left-color;
     }
   }
 
