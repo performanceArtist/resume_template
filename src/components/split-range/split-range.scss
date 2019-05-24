@@ -6,10 +6,13 @@
   &__item {
     height: 0.8125rem;
     width: 0.8125rem;
-    border-radius: 50%;
     display: inline-block;
     margin-right: 0.46rem;
     background-color: $progress-left-color;
+
+    &_circle {
+      border-radius: 50%;
+    }
 
     &_checked {
       background-color: $progress-done-color;
