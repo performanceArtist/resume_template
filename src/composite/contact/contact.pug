@@ -1,43 +1,14 @@
 include ../../components/section-title/section-title
 
-mixin contact(options)
-  -let {
-  -  address = 'Main Street, City.', 
-  -  email = 'contact@domain.com', 
-  -  phone = '555-555-555', 
-  -  website = 'www.yourweb.com'
-  -} = options;
-
-  -let info = [{
-  -  title:'address',
-  -  value: address
-  - },
-  - {
-  -   title:'e-mail', 
-  -   value: email,
-  -   prependHref:'mailto: '
-  - },
-  - {
-  -  title:'phone',
-  -  value: phone,
-  -  prependHref:'tel: '
-  - }, 
-  - {
-  -  title:'website',
-  -  value: website,
-  -  prependHref: 'http://',
-  -  attributes: {
-  -    target:'_blank',
-  -    rel:'noopener noreferrer'
-  -  }
-  - }];
-
+mixin contact(contacts = {address:{title:'address', value: 'Main Street, City.'}})
   section.contact
     .contact__header
       +section-title({icon:'fas fa-phone', title:'CONTACT'})
     .contact__content
-      each object in info
-        -let {title, value, prependHref = '', attributes = {}} = object;
+      each contactType in ['address', 'email', 'phone', 'website']
+        if contacts[contactType] === undefined
+          - continue
+        -let {title = '', value = '', prependHref = '', attributes = {}} = contacts[contactType];
         .contact__info
           .contact__title #{title}
           a.contact__link(

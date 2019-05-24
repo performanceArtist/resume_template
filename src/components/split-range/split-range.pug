@@ -5,6 +5,6 @@ mixin split-range({name = 'Name', shape='circle', checked = 6, total = 12} = {})
       - let counter = 0;
       while counter++ < total
         if counter <= checked
-          .split-range__item.split-range__item_circle.split-range__item_checked
+          div(className=`split-range__item split-range__item_${shape} split-range__item_checked`)
         else
-          .split-range__item.split-range__item_circle
+           div(className=`split-range__item split-range__item_${shape}`)
