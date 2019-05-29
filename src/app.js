@@ -2,4 +2,4 @@ function importAll(resolve) {
   resolve.keys().forEach(resolve);
 }
 
-importAll(require.context('./', true, /\.(scss|css|svg|png|ico|xml)$/));
+importAll(require.context('./', true, /\.(scss|css)$/));

@@ -2,15 +2,15 @@
   font-size: 0.823rem;
 
   &__header {
-    margin-bottom: 5%;
+    margin-bottom: 1rem;
   }
 
   &__content {
-    padding-bottom: 2.5%;
+    padding-bottom: 0.5rem;
   }
 
   &__info {
-    margin-bottom: 7%;
+    margin-bottom: 1.5rem;
   }
 
   &__title {
@@ -34,7 +34,7 @@
 @media screen and (max-width: 800px) {
   .contact {
     &__title {
-      margin-left: 5%;
+      margin-left: 1.5rem;
     }
   }
 }
