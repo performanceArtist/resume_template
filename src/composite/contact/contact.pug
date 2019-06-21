@@ -9,7 +9,7 @@ mixin contact(contacts = {address:{title:'address', value: 'Main Street, City.'}
         if contacts[contactType] === undefined
           - continue
         -let {title = '', value = '', prependHref = '', attributes = {}} = contacts[contactType];
-        .contact__info
+        section.contact__info
           .contact__title #{title}
           a.contact__link(
             href = prependHref + value
