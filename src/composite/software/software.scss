@@ -9,7 +9,7 @@
     padding-left: 0.7rem;
   }
 
-  &__range {
+  &__soft-container {
     width: 40%;
     margin-right: 10%;
     margin-bottom: 1rem;
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 400px) {
   .software {
-    &__range {
+    &__soft-container {
       width: 100%;
       margin-left: 1.5rem;
     }

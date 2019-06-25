@@ -7,6 +7,4 @@ mixin education(educations = [{}])
       +section-title({icon:'fas fa-star', title:'EDUCATION'})
     .education__content
       ul.education__list
-        each education in educations
-          .education__info
-            +info(education) 
+        +info(educations)

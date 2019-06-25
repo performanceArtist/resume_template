@@ -7,6 +7,4 @@ mixin experience(experiences = [{}])
       +section-title({icon:'fas fa-suitcase', title:'EXPERIENCE'})
     .experience__content
       ul.experience__list
-        each experience in experiences
-          .experience__info
-            +info(experience)
+        +info(experiences)

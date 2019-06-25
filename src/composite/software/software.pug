@@ -7,5 +7,7 @@ mixin software(programs = [{}])
       +section-title({icon:'fas fa-laptop', title:'SOFTWARE'})
     .software__content
       each program in programs
-        .software__range
-          +range(program)
+        .software__soft-container
+          .software__title #{program.name}
+          .software__range
+            +range(program)

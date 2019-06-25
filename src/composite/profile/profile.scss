@@ -12,7 +12,9 @@
     padding-left: 0.35rem;
   }
 
-  &__crucial-info {
-    font-weight: bold;
+  &__text {
+    &_marked {
+      font-weight: bold;
+    }
   }
 }

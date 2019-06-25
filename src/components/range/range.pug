@@ -1,5 +1,4 @@
-mixin range({name = 'Name', percentage = '50%'} = {})
+mixin range({percentage = '50%'} = {})
   div.range
-    .range__text #{name}
     .range__bar
       .range__progress(style='width:' + percentage)
