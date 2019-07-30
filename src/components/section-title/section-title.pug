@@ -1,7 +1,8 @@
-mixin section-title({icon = 'fas fa-lightbulb', title = 'Icon'} = {})
+mixin section-title({icon = 'lightbulb', title = 'Icon'} = {})
+  - const icons = ['lightbulb', 'user', 'phone', 'lightbulb', 'laptop', 'suitcase', 'star']
   header.section-title
     .section-title__content
       .section-title__icon
-        i(class=`${icon}`)
+        i(class=icons.includes(icon) ? `fas fa-${icon}` : '')
       .section-title__text #{title}
       .section-title__line

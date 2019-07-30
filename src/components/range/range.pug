@@ -1,4 +1,6 @@
 mixin range({percentage = '50%'} = {})
+  - const percentNumber = Number.isNaN(parseFloat(percentage)) ? 50 : parseFloat(percentage)
+  - const validWidth = percentNumber <= 100 && percentNumber >= 0 ? percentNumber : 50
   div.range
     .range__bar
-      .range__progress(style='width:' + percentage)
+      .range__progress(style=`width: ${validWidth}%`)

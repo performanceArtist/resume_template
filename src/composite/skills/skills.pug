@@ -4,7 +4,7 @@ include ../../components/split-range/split-range
 mixin skills(skills = [{}])
   section.skills
     .skills__header
-      +section-title({icon:'fas fa-lightbulb', title:'SKILLS'})
+      +section-title({icon:'lightbulb', title:'SKILLS'})
     each skill in skills
       .skills__title #{skill.name}
       .skills__split-range

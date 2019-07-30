@@ -3,7 +3,7 @@ include ../../components/section-title/section-title
 mixin contact(contacts = {address:{title:'address', value: 'Main Street, City.'}})
   section.contact
     .contact__header
-      +section-title({icon:'fas fa-phone', title:'CONTACT'})
+      +section-title({icon:'phone', title:'CONTACT'})
     .contact__content
       each contactType in ['address', 'email', 'phone', 'website']
         if contacts[contactType] === undefined

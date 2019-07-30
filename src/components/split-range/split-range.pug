@@ -1,9 +1,15 @@
 mixin split-range({shape='circle', checked = 6, total = 12} = {})
+  - const totalNumber = Number.isNaN(parseInt(total, 10)) ? 12 : total
+  - const checkedNumber = Number.isNaN(parseInt(checked, 10)) ? 6 : checked
+  - const validTotal = totalNumber >= 1 && totalNumber <= 25 ? totalNumber : 12
+  - const validChecked = checkedNumber >= 0 && checkedNumber <= totalNumber ? checkedNumber : 6
+  - const shapes = ['circle']
+  - const itemClass = shapes.includes(shape) ? `split-range__item split-range__item_${shape}` : `split-range__item`
   .split-range
     .split-range__items
       - let counter = 0;
-      while counter++ < total
-        if counter <= checked
-          div(class=`split-range__item split-range__item_${shape} split-range__item_checked`)
+      while counter++ < validTotal
+        if counter <= validChecked
+          div(class=`${itemClass} split-range__item_checked`)
         else
-           div(class=`split-range__item split-range__item_${shape}`)
+           div(class=itemClass)

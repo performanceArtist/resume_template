@@ -36,10 +36,10 @@
     margin-right: 1.4rem;
     margin-bottom: 0.6rem;
   }
-}
 
-.info_highlighted-name {
-  .info__name {
-    color: $blue;
+  &_highlighted-name & {
+    &__name {
+      color: $blue;
+    }
   }
 }
